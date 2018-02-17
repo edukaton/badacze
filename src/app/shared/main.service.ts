@@ -28,8 +28,8 @@ export class MainService {
                 role:"Student"}];
 
   task: any = [{id:"1",
-                name: "Task number 1",
-                pictures: [
+                name: "Zoo w Chorzowie",
+                picture: [
                   {title: "Sample title 1",
                   url: "http://via.placeholder.com/350x150"},
                   {title: "Sample title 2",
@@ -37,7 +37,7 @@ export class MainService {
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
                 category: "Biology",
                 visibility: "Public", //private not supported yet 
-                header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                header: "Przynieś choinki do zoo w Chorzowie",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis nisl quis ornare viverra. Cras sed libero volutpat, elementum lacus eget, tempus erat. Nullam feugiat lorem purus, quis rhoncus tellus.",
                 difficulty: "low", //difficulty low, medium, high
                 hastaskzero: "yes", //boolean
@@ -49,8 +49,8 @@ export class MainService {
                 
           
                 {id:"2",
-                name: "Task number 2",
-                pictures: [
+                name: "Samochód w kosmosie",
+                picture: [
                   {title: "Sample title 2",
                   url: "http://via.placeholder.com/140x100"},
                   {title: "Sample title 2",
@@ -74,17 +74,17 @@ export class MainService {
                                 userId:"2",
                                 rating:"4"}, //rating is in 1-7 scale
 
-                                {id:"1",
+                                {id:"2",
                                 taskId:"1",
                                 userId:"3",
                                 rating:"5"}, //rating is in 1-7 scale
                                 
-                                {id:"2",
+                                {id:"3",
                                 taskId:"2",
                                 userId:"2",
                                 rating:"1"}, //rating is in 1-7 scale
 
-                                {id:"2",
+                                {id:"4",
                                 taskId:"2",
                                 userId:"3",
                                 rating:"7"}]; //rating is in 1-7 scale
@@ -103,7 +103,7 @@ export class MainService {
                             
                             {id:"2", 
                             taskId:"1",
-                            userId:"2",
+                            userId:"3",
                             description:"Curabitur maximus ni.",
                             picture: "http://via.placeholder.com/350x65",
                             source:"https://scholar.google.pl/",

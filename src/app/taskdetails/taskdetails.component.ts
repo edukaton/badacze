@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from '../shared/main.service';
 
 @Component({
   selector: 'app-taskdetails',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskdetailsComponent implements OnInit {
 
-  constructor() { }
+  activeTask;
 
-  ngOnInit() {
+  constructor(
+    private _main: MainService) {
+    
   }
 
+  ngOnInit() {
+    this.tasks = this._main.task
+    this.activeTask = this.tasks[0];
+
+  }
+  tasks;
 }

@@ -1,3 +1,22 @@
-<p>
-  taskdetails works!
-</p>
+<!-- <router-outlet></router-outlet> -->
+
+<P>
+{{ activeTask.name}}<br>
+{{ activeTask.category }}<br>
+{{ activeTask.header}}<br>
+{{ activeTask.description}}<br>
+{{ activeTask.difficulty }}<br>
+{{ activeTask.hastaskzero}}<br>
+
+</P>
+<ul>
+    <li *ngFor="let picture of activeTask.picture">
+            <img src="{{ picture.url}}" alt="{{ picture.title }}">
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let acceptanceCriteria of activeTask.acceptanceCriteria">
+            <label><input type="checkbox">{{ acceptanceCriteria.criterion }}</label>
+    </li>
+</ul>

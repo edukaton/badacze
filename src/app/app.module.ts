@@ -20,6 +20,10 @@ import { UserComponent } from './user/user.component';
 // modules
 import { AngularMaterialModule } from './/angular-material.module';
 import { TaskdetailsComponent } from './taskdetails/taskdetails.component';
+import { UploadtasksolutionComponent } from './uploadtasksolution/uploadtasksolution.component';
+import { DisplaytasksolutionComponent } from './displaytasksolution/displaytasksolution.component';
+import { InitialstudentratingComponent } from './initialstudentrating/initialstudentrating.component';
+import { FinalstudentratingComponent } from './finalstudentrating/finalstudentrating.component';
 // import { AppRoutingModule } from './/app-routing.module'
 
 
@@ -32,7 +36,11 @@ import { TaskdetailsComponent } from './taskdetails/taskdetails.component';
     MainComponent,
     LoginComponent,
     UserComponent,
-    TaskdetailsComponent
+    TaskdetailsComponent,
+    UploadtasksolutionComponent,
+    DisplaytasksolutionComponent,
+    InitialstudentratingComponent,
+    FinalstudentratingComponent
   ],
   imports: [
     BrowserModule,
