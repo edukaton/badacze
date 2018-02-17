@@ -19,6 +19,7 @@ import { UserComponent } from './user/user.component';
 
 // modules
 import { AngularMaterialModule } from './/angular-material.module';
+import { TaskdetailsComponent } from './taskdetails/taskdetails.component';
 // import { AppRoutingModule } from './/app-routing.module'
 
 
@@ -30,7 +31,8 @@ import { AngularMaterialModule } from './/angular-material.module';
     FooterComponent,
     MainComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    TaskdetailsComponent
   ],
   imports: [
     BrowserModule,

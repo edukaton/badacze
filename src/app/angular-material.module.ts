@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import {
   MatButtonModule,
   MatCheckboxModule,
-  MatRadioModule
+  MatRadioModule,
+  MatToolbarModule,
+  MatIconModule
 } from '@angular/material';
 
 import {
@@ -16,13 +18,17 @@ import {
     MatButtonModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule
   ],
 })
 export class AngularMaterialModule {}
