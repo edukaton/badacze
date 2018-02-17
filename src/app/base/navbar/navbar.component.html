@@ -1,5 +1,32 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="main-navbar">
   <mat-toolbar-row>
-    <span>Foka News</span>
+    <a mat-raised-button color="primary" routerLink="login">Foka News</a>
+    <a mat-raised-button color="primary" class="ml-auto" routerLink="task">Task</a>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>face</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="confirmModal()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>zrezygnuj</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Nauczyciel</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Uczeń</span>
+      </button>
+
+    </mat-menu>
+    <!-- <a routerLink="user" mat-mini-fab color="accent">
+
+      <span>user</span>
+    </a> -->
   </mat-toolbar-row>
 </mat-toolbar>

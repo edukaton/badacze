@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { UserService } from '../user/user.service'
+import { MainService } from '../shared/main.service'
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,9 @@ import { NgModel } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
+  userName: string;
   userType: string;
+  loginInput: string;
 
   userTypes = [
     {
@@ -20,9 +24,17 @@ export class LoginComponent implements OnInit {
       value: false
     }
   ]
-  constructor() { }
+  constructor(
+    private _userService: UserService,
+    private _ms: MainService
+  ) { }
 
   ngOnInit() {
+  }
+
+  logInAs(admin) {
+    this._userService.createUser(this._ms.users.length, this.userName, admin, true)
+    this._userService.clearLastUser()
   }
 
 }

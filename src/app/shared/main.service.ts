@@ -15,6 +15,9 @@ export class MainService {
   apiRoot: string = '/api';
   results: Object[];
   loading: boolean;
+
+  users: any[] = [];
+
   user: any = [{id:"1",
                 name:"Tomasz",
                 role:"Teacher"},
@@ -36,7 +39,7 @@ export class MainService {
                   url: "http://via.placeholder.com/200x100"}],
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
                 category: "Biology",
-                visibility: "Public", //private not supported yet 
+                visibility: "Public", //private not supported yet
                 header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis nisl quis ornare viverra. Cras sed libero volutpat, elementum lacus eget, tempus erat. Nullam feugiat lorem purus, quis rhoncus tellus.",
                 difficulty: "low", //difficulty low, medium, high
@@ -46,8 +49,8 @@ export class MainService {
                   {criterion: "Lorem ipsum dolor sit amet"},
                   {criterion: "In mattis nisl quis ornare viverra."},
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
-                
-          
+
+
                 {id:"2",
                 name: "Task number 2",
                 pictures: [
@@ -57,7 +60,7 @@ export class MainService {
                   url: "http://via.placeholder.com/350x65"}],
                 video: "https://www.youtube.com/watch?v=jWkMhCLkVOg",
                 category: "Physics",
-                visibility: "Public", //private not supported yet 
+                visibility: "Public", //private not supported yet
                 header: "In mattis nisl quis ornare viverra.",
                 description: "Curabitur maximus nisl ac justo accumsan auctor eu vitae enim. Fusce pellentesque ac metus sit amet pretium. Donec magna orci, lobortis at malesuada sed, rhoncus quis quam. Donec molestie.",
                 difficulty: "medium", //difficulty low, medium, high
@@ -78,7 +81,7 @@ export class MainService {
                                 taskId:"1",
                                 userId:"3",
                                 rating:"5"}, //rating is in 1-7 scale
-                                
+
                                 {id:"2",
                                 taskId:"2",
                                 userId:"2",
@@ -90,7 +93,7 @@ export class MainService {
                                 rating:"7"}]; //rating is in 1-7 scale
 
 //student can add many solutions to single task
-  taskStudentSolution: any = [{id:"1", 
+  taskStudentSolution: any = [{id:"1",
                             taskId:"1",
                             userId:"2",
                             description:"Curabitur maximus nisl ac justo accumsan auctor eu vitae enim.",
@@ -100,8 +103,8 @@ export class MainService {
                             sourceAuthor:"Cori Bargmann, Rockefeller University",
                             sourceYear: "2017",
                             sourcetype: "Online"}, //can be online, paper etc
-                            
-                            {id:"2", 
+
+                            {id:"2",
                             taskId:"1",
                             userId:"2",
                             description:"Curabitur maximus ni.",
@@ -111,7 +114,7 @@ export class MainService {
                             sourceYear: "1983",
                             sourcetype: "Paper"}, //can be online, paper etc
 
-                            {id:"3", 
+                            {id:"3",
                             taskId:"2",
                             userId:"3",
                             description:"Curabitur maximus ni.",
@@ -130,7 +133,7 @@ export class MainService {
                                 taskId:"1",
                                 userId:"3",
                                 rating:"5"}, //rating is in 1-7 scale
-                                
+
                                 {id:"2",
                                 taskId:"2",
                                 userId:"2",
@@ -162,6 +165,6 @@ export class MainService {
     console.log("main service is on");
   }
 
-  
+
 
 }

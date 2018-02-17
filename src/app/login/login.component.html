@@ -1,21 +1,32 @@
-<h1>Foka news</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <div class="login-wrapper mat-elevation-z24">
+        <div class="login-header">
+          <h1>Foka news</h1>
+        </div>
 
-<!-- <form>
-  Mam na imię <input type="text" name="firstname"> i jestem:<br>
-  <input type="radio" name="role" value="teacher" checked> Nauczycielem
-  <input type="radio" name="role" value="student"> Uczniem<br>
-</form> -->
+        <div class="login-body">
+            <mat-form-field class="">
+              <input matInput placeholder="Imię" value="" [(ngModel)]="userName">
+            </mat-form-field>
+          <mat-radio-group class="login-radio" [(ngModel)]="userType">
+            <mat-radio-button class="" *ngFor="let user of userTypes" [value]="user.value">
+              {{user.name}}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
 
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Imię" value="">
-  </mat-form-field>
-</form>
+        <div class="login-footer">
+          <a mat-raised-button class="login-btn"
+             routerLink="."
+             [disabled]="!nameIsValid"
+             (click)="logInAs(userType)">
+             Link
+          </a>
+        </div>
+      </div>
 
-<mat-radio-group class="" [(ngModel)]="userType">
-  <mat-radio-button class="example-radio-button" *ngFor="let user of userTypes" [value]="user.value">
-    {{user.name}}
-  </mat-radio-button>
-</mat-radio-group>
-
-<button type="button" [disabled]="!nameIsValid" (click)="moveToNext(user)">Rozpocznij!</button>
+    </div>
+  </div>
+</div>
