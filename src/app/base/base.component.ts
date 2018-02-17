@@ -11,11 +11,11 @@ export class BaseComponent implements OnInit {
   data: any;
 
   constructor(
-    private _main: MainService
+    // private _main: MainService
   ) {
     // _main.mainData("res")
-    this.data = _main.mainData("res")
-    console.log(this.data);
+    // this.data = _main.mainData("res")
+    // console.log(this.data);
     
   }
 
