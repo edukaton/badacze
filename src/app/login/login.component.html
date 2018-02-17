@@ -1,8 +1,7 @@
 <h1>Foka news</h1>
 
 <!-- <form>
-  Mam na imię
-  <input type="text" name="firstname"> i jestem:<br>
+  Mam na imię <input type="text" name="firstname"> i jestem:<br>
   <input type="radio" name="role" value="teacher" checked> Nauczycielem
   <input type="radio" name="role" value="student"> Uczniem<br>
 </form> -->
@@ -18,6 +17,5 @@
     {{user.name}}
   </mat-radio-button>
 </mat-radio-group>
-<div class="example-selected-value">Your favorite season is: {{favoriteSeason}}</div>
 
-<button type="button" [disabled]="!nameIsValid">Rozpocznij!</button>
+<button type="button" [disabled]="!nameIsValid" (click)="moveToNext(user)">Rozpocznij!</button>

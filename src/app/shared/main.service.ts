@@ -17,15 +17,15 @@ export class MainService {
   loading: boolean;
   user: any = [{id:"1",
                 name:"Tomasz",
-                type:"Teacher"},
+                role:"Teacher"},
 
                 {id:"2",
                 name:"Mariusz",
-                type:"Student"},
+                role:"Student"},
 
                 {id:"3",
                 name:"Dariusz",
-                type:"Student"}];
+                role:"Student"}];
 
   task: any = [{id:"1",
                 name: "Task number 1",

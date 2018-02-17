@@ -8,10 +8,10 @@ import { MainService } from '../shared/main.service';
 })
 export class BaseComponent implements OnInit {
 
-  data: any;
+  user: any;
 
   constructor(
-    // private _main: MainService
+     private _main: MainService
   ) {
     // _main.mainData("res")
     // this.data = _main.mainData("res")
@@ -19,7 +19,25 @@ export class BaseComponent implements OnInit {
     
   }
 
+  moveToNext (user)
+  {
+    if (user.role = "Teacher") 
+    {
+      console.log("teacher!");
+      return true;
+    }
+    else
+    {
+      console.log("student!")
+      return false;
+    }
+
+  }
+
+
   ngOnInit() {
+    this.user = this._main.user
+
     // this.data = this._main.data
 
     // console.log(this._main.data);
