@@ -1,0 +1,113 @@
+.form-control
+  border: .1rem solid $border-color
+  border-radius: .4rem
+  background-color: #fff
+  box-shadow: none
+  font-size: 1.2rem
+  line-height: 1.5
+  height: 3rem
+  padding: .5rem 1.5rem
+  color: #354052
+  &::placeholder
+    color: $gray
+  &:focus
+    border-color: $brand-primary
+    box-shadow: none
+
+.has
+  &-error
+    .form-control
+      border-color: $brand-danger
+      &:focus
+        box-shadow: none
+        border-color: $brand-danger
+
+      &-feedback
+        color: $brand-danger
+  &-success
+    .form-control
+      border-color: $brand-success
+      &:focus
+        box-shadow: none
+        border-color: $brand-success
+
+      &-feedback
+        color: $brand-success
+
+.form-control-feedback
+  height: 3rem
+  width: 3rem
+
+.form-control-feedback-custom
+  padding: .9rem
+  line-height: 1
+  svg
+    width: 100%
+    height: auto
+
+
+.has-text-feedback
+  position: relative
+  .form-control-feedback
+    font-size: 1rem
+    line-height: 1.8
+    height: auto
+    width: auto
+    transform: translateY(-100%)
+    padding: 0 .5rem
+
+.select-wrapper
+  position: relative
+  &::after
+    content: url(./assets/icon/arrow-down.svg)
+    right: 1.3rem
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    pointer-events: none
+select
+  background-image: $brand-gradient-secondary
+  appearance: none
+  &.form-control
+    background-image: $brand-gradient-secondary
+    appearance: none
+
+.btn-default
+  &.form-control
+    color: #7f8fa4
+    border-color: #DFE3E9
+    &:hover
+      border-color: #DFE3E9
+    &:focus
+      outline: none
+      box-shadow: none
+.date-wrapper,
+.hour-wrapper
+  position: relative
+  .owl-datetime-main-input
+    padding-left: 3rem
+
+  &::before
+    content: ""
+    position: absolute
+    left: 1rem
+    display: block
+    width: 1.5rem
+    height: 1.5rem
+    // background-color: red
+    z-index: 1
+    background-size: 100%
+    background-repeat: no-repeat
+    top: 50%
+    transform: translateY(-50%)
+
+.date-wrapper
+  &::before
+    background-image: url(./assets/icon/calendar.svg)
+
+
+.hour-wrapper
+  &::before
+    background-image: url(./assets/icon/ui/clock.svg)
+
+.input-icon-left

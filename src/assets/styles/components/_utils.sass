@@ -1,0 +1,129 @@
+//background color
+.c
+  &-white
+    color: $white
+  &-primary
+    color: $brand-primary
+    &-lighter
+      color: $brand-primary-lighter
+    &-darker
+      color: $brand-primary-darker
+  // &-cta
+    color: $brand-cta
+    &-lighter
+      color: $brand-cta-lighter
+    &-darker
+      color: $brand-cta-darker
+  &-danger
+    color: $brand-danger
+  &-text
+    color: $brand-text
+    &-black
+      color: black
+    &-lighter
+      color: #7F8FA4
+    // &-darker
+      // color: $brand-text-darker
+
+//background color
+.bg-c
+  &-panel
+    &-darker
+      background-color: #FAFBFC
+  // &-white
+  //   background-color: $white
+  // &-primary
+  //   background-color: $brand-primary
+  //   &-lighter
+  //     background-color: $brand-primary-lighter
+  //   &-darker
+  //     background-color: $brand-primary-darker
+  // &-cta
+  //   background-color: $brand-cta
+  //   &-lighter
+  //     background-color: $brand-cta-lighter
+  //   &-darker
+  //     background-color: $brand-cta-darker
+  // &-text
+  //   background-color: $brand-text
+  //   &-lighter
+  //     background-color: $brand-text-lighter
+  //   &-darker
+      background-color: $brand-text-darker
+
+//margin
+$margin: 10
+$margin-size: 0px
+
+@while $margin > -1
+  .u-m#{$margin}
+    margin: $margin-size + $margin
+  .u-mt#{$margin}
+    margin-top: $margin-size + $margin
+  .u-ml#{$margin}
+    margin-left: $margin-size + $margin
+  .u-mb#{$margin}
+    margin-bottom: $margin-size + $margin
+  .u-mr#{$margin}
+    margin-right: $margin-size + $margin
+
+  .u-m#{$margin * 10}
+    margin: $margin-size + $margin * 10
+  .u-mt#{$margin * 10}
+    margin-top: $margin-size + $margin * 10
+  .u-ml#{$margin * 10}
+    margin-left: $margin-size + $margin * 10
+  .u-mb#{$margin * 10}
+    margin-bottom: $margin-size + $margin * 10
+  .u-mr#{$margin * 10}
+    margin-right: $margin-size + $margin * 10
+  $margin: $margin - 1
+
+.u-m
+  &a
+    margin: auto
+  &ta
+    margin-top: auto
+  &la
+    margin-left: auto
+  &ba
+    margin-bottom: auto
+  &ra
+    margin-right: auto
+
+// padding
+$padding: 10
+$padding-size: 0px
+
+@while $padding > -1
+  .u-p#{$padding}
+    padding: $padding-size + $padding
+  .u-pt#{$padding}
+    padding-top: $padding-size + $padding
+  .u-pl#{$padding}
+    padding-left: $padding-size + $padding
+  .u-pb#{$padding}
+    padding-bottom: $padding-size + $padding
+  .u-pr#{$padding}
+    padding-right: $padding-size + $padding
+
+  .u-p#{$padding * 10}
+    padding: $padding-size + $padding * 10
+  .u-pt#{$padding * 10}
+    padding-top: $padding-size + $padding * 10
+  .u-pl#{$padding * 10}
+    padding-left: $padding-size + $padding * 10
+  .u-pb#{$padding * 10}
+    padding-bottom: $padding-size + $padding * 10
+  .u-pr#{$padding * 10}
+    padding-right: $padding-size + $padding * 10
+  $padding: $padding - 1
+
+// font-weight
+@for $i from 1 through 9
+  .u-fw#{$i*100}
+    font-weight: $i * 100
+
+@for $i from 10 through 20
+  .u-fw#{$i*100}
+    font-weight: $i * 100

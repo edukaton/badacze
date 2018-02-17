@@ -1,0 +1,99 @@
+.navigation
+  display: flex
+  justify-content: space-between
+
+.nav-tabs
+  border: 0
+  >li
+    >a
+      border-bottom: 2px solid transparent
+      color: #7F8FA4
+      .navigation &
+        padding: 1.5rem 0
+        margin-right: 4rem
+        &:first-of-type
+          margin-left: 3rem
+      &:hover,
+      &:focus
+        border-radius: 0
+        border-color: transparent
+        background-color: transparent
+      &.active
+        border-bottom: 2px solid $brand-primary
+        color: $brand-text
+
+.nav-tabs
+  > li
+    &.active
+      > a
+        border-color: transparent
+        border-bottom: 2px solid $brand-primary
+        background-color: transparent
+        color: $brand-text
+        &:hover,
+        &:focus
+          background-color: transparent
+          border-color: transparent
+          border-bottom: 2px solid $brand-primary
+          color: $brand-text
+
+.nav-content
+  &-top
+    margin-bottom: 1.5rem
+    border-top: none
+    border-left: none
+    border-right: none
+    border-radius: 0
+    // border-top-left-radius: 0.4rem
+    // border-top-left-radius: 0.4rem
+  &-bottom
+    padding: 1rem
+    margin-top: 1.5rem
+    border-bottom: none
+    border-top-left-radius: 0.4rem
+    border-top-right-radius: 0.4rem
+
+//
+//
+// .active,
+// .nav
+//   > li
+//     >.active
+//       &:hover
+//         border: 0
+//         border-bottom: 2px solid #0090ff
+//
+// .nav
+//   > li
+//     > a
+//       &:hover,
+//       .nav
+//         > li
+//           > a
+//             &:focus
+//               background: transparent
+//
+// .nav
+//   > li
+//     > a
+//       &:hover
+//         border-color: transparent
+//
+//
+// .nav
+//   a
+//     &.active
+//       color: #354052
+//
+// .nav
+//   a
+//     color: #7f8fa4
+//   // position: relative
+//   // padding-left: 2rem
+//
+// .nav
+//   > li
+//     > a
+//       position: relative
+//       display: block
+//       padding: 10px 15px
