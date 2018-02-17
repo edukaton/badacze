@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { NgModel } from '@angular/forms';
+import { FormsModule  } from '@angular/forms';
 
 // components
 import { AppComponent } from './app.component';
@@ -34,10 +34,12 @@ import { AngularMaterialModule } from './/angular-material.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     // HttpClientModule,
     HttpModule,
+    FormsModule,
     AngularMaterialModule,
-    NgModel
+    // NgModel
     // AppRoutingModule
   ],
   providers: [

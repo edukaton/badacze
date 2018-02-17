@@ -6,17 +6,23 @@ import {
   MatRadioModule
 } from '@angular/material';
 
+import {
+  MatInputModule
+} from '@angular/material/input';
+
 
 @NgModule({
   imports: [
     MatButtonModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatInputModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatInputModule
   ],
 })
 export class AngularMaterialModule {}

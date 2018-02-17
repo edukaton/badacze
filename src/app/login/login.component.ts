@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  nameIsValid: boolean = false
+  userType: string;
 
-  favoriteSeason: string;
-
-  seasons = [
-    'Winter',
-    'Spring',
-    'Summer',
-    'Autumn',
-  ];
-
+  userTypes = [
+    {
+      name: "nauczyciel",
+      value: true
+    },
+    {
+      name: "uczeń",
+      value: false
+    }
+  ]
   constructor() { }
 
   ngOnInit() {
