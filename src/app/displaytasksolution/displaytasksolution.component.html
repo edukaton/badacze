@@ -1,0 +1,14 @@
+<p>
+    Aktywne zadanie to: {{ activeTask.name}}
+  </p>
+  <p>
+  Tak odpowiadali uczniowie:
+  </p>
+  
+  <ul>
+      <li *ngFor="let activetaskStudentSolution of activetaskStudentSolutions">
+          {{ getStudentName(activetaskStudentSolution.userId) }}
+          {{ activetaskStudentSolution.description }}
+      </li>
+  </ul>
+  

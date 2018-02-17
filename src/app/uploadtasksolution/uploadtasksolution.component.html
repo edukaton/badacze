@@ -1,0 +1,12 @@
+<p>
+  Aktywne zadanie to: {{ activeTask.name}}
+</p>
+<p>
+Tak odpowiadałeś:
+</p>
+
+<ul>
+    <li *ngFor="let activetaskStudentSolution of activetaskStudentSolutions">
+            {{ activetaskStudentSolution.description }}"
+    </li>
+</ul>

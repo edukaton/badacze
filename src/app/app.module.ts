@@ -12,6 +12,10 @@ import { FooterComponent } from './base/footer/footer.component';
 import { MainComponent } from './base/main/main.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
+import { UploadtasksolutionComponent } from './uploadtasksolution/uploadtasksolution.component';
+import { DisplaytasksolutionComponent } from './displaytasksolution/displaytasksolution.component';
+import { InitialstudentratingComponent } from './initialstudentrating/initialstudentrating.component';
+import { FinalstudentratingComponent } from './finalstudentrating/finalstudentrating.component';
 
 // services
 import { MainService } from './shared/main.service';
@@ -21,8 +25,8 @@ import { ModalService } from './shared/modal.service'
 // modules
 import { AngularMaterialModule } from './angular-material.module';
 import { TaskdetailsComponent } from './taskdetails/taskdetails.component';
-import { AppRoutingModule } from './app-routing.module'
 
+import { AppRoutingModule } from './app-routing.module'
 
 
 @NgModule({
@@ -34,7 +38,11 @@ import { AppRoutingModule } from './app-routing.module'
     MainComponent,
     LoginComponent,
     UserComponent,
-    TaskdetailsComponent
+    TaskdetailsComponent,
+    UploadtasksolutionComponent,
+    DisplaytasksolutionComponent,
+    InitialstudentratingComponent,
+    FinalstudentratingComponent
   ],
   imports: [
     BrowserModule,
