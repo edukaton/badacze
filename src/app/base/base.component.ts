@@ -27,7 +27,4 @@ export class BaseComponent implements OnInit {
     // this._main.log()
 
   }
-
-
-
 }

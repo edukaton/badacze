@@ -5,7 +5,7 @@ export class Case {
         contextVideo: any[],
         contextImg: any[],
     ) {
-
+        
     }
 
     addCase() {
