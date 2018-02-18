@@ -1,0 +1,50 @@
+// animations
+=keyframes($name)
+  @keyframes #{$name}
+    @content
+
+// media
+
+=media($for, $type, $val-one, $val-two)
+  @if $for == 'min'
+    @media screen and (min-#{$type}: #{$val-one})
+      @content
+
+  @else if $for == 'max'
+    @media screen and (max-#{$type}: #{$val-two})
+      @content
+
+  @else if $for == 'min-max'
+    @media screen and (min-#{$type}: #{$val-one}) and (max-#{$type}: #{$val-two})
+      @content
+
+// ex :
+  +media('min-max', height, 320px, 450px)
+    > @media screen and (min-height: 320px and max-height: 450px)
+
+// =media-min($val)
+//   @media screen and (min-width: #{$val})
+//     @content
+//
+// =media-max($val)
+//   @media screen and (max-width: #{$val})
+//     @content
+//
+// =media-min-max($minval, $maxval)
+//   @media screen and (min-width: #{$minval}) and (max-width: #{$maxval})
+//     @content
+
+
+// centering
+=center($position)
+  position: absolute
+  @if $position == 'vertical'
+    top: 50%
+    transform: translateY(-50%)
+  @else if $position == 'horizontal'
+    left: 50%
+    transform: translate(-50%)
+  @else if $position == 'both'
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

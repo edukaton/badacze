@@ -1,0 +1,142 @@
+.checkbox,
+.checkbox-inline
+  input[type="checkbox"]
+    width: 1.6rem
+    height: 1.6rem
+    margin-top: 0
+    appearance: none
+    &::before,
+    &::after
+      position: absolute
+
+    &::before
+      content: ""
+      width: 100%
+      height: 100%
+      background: $brand-gradient-secondary
+      border-radius: 0.4rem
+      border: 1px solid #CED0DA
+      top: 0
+      left: 0
+
+    &:after
+      content: url('./assets/icon/ui/tick.svg')
+      left: 0.4rem
+      top: 0
+      display: none
+      width: 0.7rem
+      height: 0.6rem
+
+    &:checked
+      + .checkbox-btn-bg
+        background: $brand-gradient-primary
+        color: $white
+      ~ .default-value
+        color: white
+      &::before
+        background: $brand-gradient-primary
+        border-color: $brand-primary
+      &::after
+        display: block
+
+    &:disabled
+      &::before
+        background: #eaedf1
+        border-color: #dfe3ea
+      &::after
+        content: url('./assets/icon/ui/tick-disabled.svg')
+
+  &.checkbox-inversed
+    input[type="checkbox"]
+      margin-top: 4px
+      &:before
+        background: $white
+      &:after
+        content: url('./assets/icon/ui/tick-white.svg')
+
+  // +
+
+input:focus + .toggler
+  box-shadow: 0 0 1px #2196F3
+
+
+.radio,
+.radio-inline
+  input[type="radio"]
+    margin-top: 0
+    appearance: none
+    // position: relative
+
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+
+    &::before
+      display: block
+      background: $brand-gradient-secondary
+      border: 1px solid #CED0DA
+      width: 1.6rem
+      height: 1.6rem
+      border-radius: 50%
+
+
+    &:after
+      display: none
+      width: 0.6rem
+      height: 0.6rem
+      background-color: $white
+      border-radius: 50%
+      top: 0.5rem
+      left: 0.5rem
+
+    &:checked
+      + .radio-btn-bg
+        background: $brand-gradient-primary
+        color: $white
+      ~ .default-value
+        color: white
+      &::before
+        background: $brand-gradient-primary
+        border-color: $brand-primary
+
+      &::after
+        display: block
+
+  &.radio-inversed
+    input[type="radio"]
+      margin-top: 4px
+      &:before
+        background: $white
+      &:after
+        background-color: $brand-primary
+      // &:checked
+        + .inversed-label
+          color: white
+
+.radio-btn,
+.checkbox-btn
+  padding: 1rem 1.5rem
+  z-index: 0
+  position: relative
+  label
+    // padding-top: .5rem
+    padding-left: 2rem
+  &-bg
+    position: absolute
+    z-index: -1
+    line-height: 1.9
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    border-radius: .9rem
+    background: $white
+    padding: 1rem 2rem 1rem 4rem
+    border: 1px solid $border-color
+.default-value
+  position: absolute
+  right: 2rem
+  top: 50%
+  transform: translateY(-50%)
+.inversed-label
