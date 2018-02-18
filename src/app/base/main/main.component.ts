@@ -12,6 +12,7 @@ export class MainComponent implements OnInit {
   tasks;
   pictures;
 
+
   constructor(
     private _main: MainService
   ) {}
@@ -22,6 +23,7 @@ export class MainComponent implements OnInit {
   }
 
   log() {
+
     console.log(1)
   }
 

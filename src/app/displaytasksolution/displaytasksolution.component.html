@@ -1,359 +1,372 @@
-<table style="width:100%">
+<section class="task-solution">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Treść zadania: {{ activeTask.name}}<br></h2>
+        <h3>{{ activeTask.taskdescription}}</h3>
+      </div>
+
+      <div class="col">
+
+
+        <mat-tab-group>
+                <mat-tab label="Podsumowanie">
+                        <mat-tab-group>
+                                <mat-tab label="News">
+        <!-- <table>
+        <tr><td>
+                <img src='././assets/img/fokaprzezr1.png' height="250" width="250">
+        </td>
+        <ul>
+          <li>
+            Średnia ocena artykułu przed argumentacją: 5,7 foki
+          </li>
+          <li>
+            Spójność: Silna
+          </li>
+          <li>
+            Odchylenie standardowe: 1,5
+          </li>
+        </ul>
+        <td>
+
         <tr>
-<h2>Treść zadania: {{ activeTask.name}}<br></h2>
-<h3>{{ activeTask.taskdescription}}</h3>
-</tr>
-<br>
-</table>
+          <img src='././assets/img/kaczka2.png' height="42" width="42">
+          <mat-slider min= 1 max= 7 step= 1 value= 5.7></mat-slider>
+          <img src='././assets/img/fokaprzezr2.png' height="42" width="42">
 
+        </tr>
 
-<mat-tab-group>
-        <mat-tab label="Podsumowanie">
-                <mat-tab-group>
-                        <mat-tab label="News">
-<table>
-<tr><td>
-        <img src='././assets/img/fokaprzezr1.png' height="250" width="250">
-</td>
-<td>
-    Średnia ocena artykułu przed argumentacją: 5,7 foki<br>
-    Spójność: Silna <br>
-    Odchylenie standardowe: 1,5<br>
-</td>
-</tr>
+        </table> -->
+        <!-- <table>
+        <tr>
+        <td><img src='././assets/img/fokaprzezr1.png' height="150" width="150"></td>
 
-
-
-<tr>
-        <td><img src='././assets/img/kaczka2.png' height="42" width="42"></td>
-        <td><mat-slider min= 1 max= 7 step= 1 value= 5.7></mat-slider></td>
-        <td><img src='././assets/img/fokaprzezr2.png' height="42" width="42"></td>
-
-</tr>
-
-</table>
-<table>
-<tr>
-<td><img src='././assets/img/fokaprzezr1.png' height="150" width="150"></td>
-
-        9 Fok:<br>
-        > Argumenty<br>
-        > Argumenty<br>
-<br>
-8 Fok:<br>
-> Argumenty<br>
-> Argumenty<br>
-</tr>
-<br>
-<br>
-<tr >
-        <td><img src='././assets/img/kaczka2.png' height="150" width="150"></td>
-        1 kaczka:<br>
-        > Argumenty<br>
-        > Argumenty<br>
+                9 Fok:<br>
+                > Argumenty<br>
+                > Argumenty<br>
         <br>
-        2 kaczki:<br>
+        8 Fok:<br>
         > Argumenty<br>
         > Argumenty<br>
         </tr>
-
-
-</table>
-                        </mat-tab>
-                        <mat-tab label="Argumentacja">
-<tr>
-<h1>Źródła</h1>
-</tr>
-<tr>
-    <img src='././assets/img/chart.png'>
-</tr>
-<hr>
-<tr>
-<h2>Wikipedia</h2>
-<a href="https://pl.wikipedia.org/wiki/Kaczka" target="_blank">https://pl.wikipedia.org/wiki/Kaczka</a>
-</tr>
-<tr>
-        Liczba wpisów: 17<br>
-        Średnia mocy: +7<br>
-        Spójność mocy: duża<br>
         <br>
-        Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
-        Argumentacja : <br>
-        > Argumenty<br>
-        > Argumenty<br>
-</tr>
-<hr>
-<tr>
-<h2>Google Scholar</h2>
-<a href="https://scholar.google.com/citations?user=XR85xO8AAAAJ&hl=pl" target="_blank">https://scholar.google.com/citations?user=XR85xO8AAAAJ&hl=pl</a>
-</tr>
-<tr>
-        Liczba wpisów: 17<br>
-        Średnia mocy: +7<br>
-        Spójność mocy: duża<br>
         <br>
-        Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
-        Argumentacja : <br>
-        > Argumenty<br>
-        > Argumenty<br>
-</tr>
+        <tr >
+                <td><img src='././assets/img/kaczka2.png' height="150" width="150"></td>
+                1 kaczka:<br>
+                > Argumenty<br>
+                > Argumenty<br>
+                <br>
+                2 kaczki:<br>
+                > Argumenty<br>
+                > Argumenty<br>
+                </tr>
 
-<hr>
-<tr>
-<h2>Pudelek</h2>
-<a href="https://www.pudelek.pl/artykul/96810/kaczka_wyleczyla_psa_z_depresji_nie_mamy_pojecia_skad_sie_wziela_ale_na_pewno_kocha_georgea_zdjecia_s/foto_1#s1" target="_blank">https://www.pudelek.pl/artykul/96810/kaczka_wyleczyla_psa_z_depresji_nie_mamy_pojecia_skad_sie_wziela_ale_na_pewno_kocha_georgea_zdjecia_s/foto_1#s1</a>
-</tr>
-<tr>
-        Liczba wpisów: 17<br>
-        Średnia mocy: +7<br>
-        Spójność mocy: duża<br>
-        <br>
-        Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
-        Argumentacja : <br>
-        > Argumenty<br>
-        > Argumenty<br>
-</tr>
 
-</mat-tab>
-             <mat-tab label="Weryfikacja">
-                    <table>
-                            <tr><td>
-                                    <img src="https://www.shareicon.net/data/256x256/2016/10/22/846624_animal_512x512.png">
-                            </td>
-                            <td>
-                                Średnia ocena artykułu przed argumentacją: 7,7 foki<br>
-                                Spójność: Silna <br>
-                                Odchylenie standardowe: 1,5<br>
-                            </td>
-                            </tr>
-                            
-                            
-                            
-                            <tr>
-                                    <mat-slider min="1" max="7" step="0.1" value="7.7"></mat-slider>
-                            </tr>
-                            
-                            </table>
+        </table> -->
+        </mat-tab>
 
+        <mat-tab label="Argumentacja">
+        <tr>
+        <h1>Źródła</h1>
+        </tr>
+        <tr>
+            <img src='././assets/img/chart.png'>
+        </tr>
+        <hr>
+        <tr>
+        <h2>Wikipedia</h2>
+        <a href="https://pl.wikipedia.org/wiki/Kaczka" target="_blank">https://pl.wikipedia.org/wiki/Kaczka</a>
+        </tr>
+        <tr>
+                Liczba wpisów: 17<br>
+                Średnia mocy: +7<br>
+                Spójność mocy: duża<br>
+                <br>
+                Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
+                Argumentacja : <br>
+                > Argumenty<br>
+                > Argumenty<br>
+        </tr>
+        <hr>
+        <tr>
+        <h2>Google Scholar</h2>
+        <a href="https://scholar.google.com/citations?user=XR85xO8AAAAJ&hl=pl" target="_blank">https://scholar.google.com/citations?user=XR85xO8AAAAJ&hl=pl</a>
+        </tr>
+        <tr>
+                Liczba wpisów: 17<br>
+                Średnia mocy: +7<br>
+                Spójność mocy: duża<br>
+                <br>
+                Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
+                Argumentacja : <br>
+                > Argumenty<br>
+                > Argumenty<br>
+        </tr>
+
+        <hr>
+        <tr>
+        <h2>Pudelek</h2>
+        <a href="https://www.pudelek.pl/artykul/96810/kaczka_wyleczyla_psa_z_depresji_nie_mamy_pojecia_skad_sie_wziela_ale_na_pewno_kocha_georgea_zdjecia_s/foto_1#s1" target="_blank">https://www.pudelek.pl/artykul/96810/kaczka_wyleczyla_psa_z_depresji_nie_mamy_pojecia_skad_sie_wziela_ale_na_pewno_kocha_georgea_zdjecia_s/foto_1#s1</a>
+        </tr>
+        <tr>
+                Liczba wpisów: 17<br>
+                Średnia mocy: +7<br>
+                Spójność mocy: duża<br>
+                <br>
+                Oceny mocy: 3, 4, 2, 5, 1, 3, 6, -1<br>
+                Argumentacja : <br>
+                > Argumenty<br>
+                > Argumenty<br>
+        </tr>
+
+        </mat-tab>
+                     <mat-tab label="Weryfikacja">
                             <table>
                                     <tr><td>
                                             <img src="https://www.shareicon.net/data/256x256/2016/10/22/846624_animal_512x512.png">
                                     </td>
                                     <td>
-                                        Średnia ocena artykułu po argumentacji: 3,7 foki<br>
+                                        Średnia ocena artykułu przed argumentacją: 7,7 foki<br>
                                         Spójność: Silna <br>
                                         Odchylenie standardowe: 1,5<br>
                                     </td>
                                     </tr>
-                                    
-                                    
-                                    
+
+
+
                                     <tr>
-                                            <mat-slider min="1" max="7" step="0.1" value="3.5"></mat-slider>
+                                            <mat-slider min="1" max="7" step="0.1" value="7.7"></mat-slider>
                                     </tr>
-                                    
+
                                     </table>
 
                                     <table>
-                                            <tr >
-                                            9 Fok:<br>
-                                            > Argumenty<br>
-                                            > Argumenty<br>
-                                            <br>
-                                            8 Fok:<br>
-                                            > Argumenty<br>
-                                            > Argumenty<br>
+                                            <tr><td>
+                                                    <img src="https://www.shareicon.net/data/256x256/2016/10/22/846624_animal_512x512.png">
+                                            </td>
+                                            <td>
+                                                Średnia ocena artykułu po argumentacji: 3,7 foki<br>
+                                                Spójność: Silna <br>
+                                                Odchylenie standardowe: 1,5<br>
+                                            </td>
                                             </tr>
-                                            <br>
-                                            <br>
-                                            <tr >
-                                                    1 kaczka:<br>
+
+
+
+                                            <tr>
+                                                    <mat-slider min="1" max="7" step="0.1" value="3.5"></mat-slider>
+                                            </tr>
+
+                                            </table>
+
+                                            <table>
+                                                    <tr >
+                                                    9 Fok:<br>
                                                     > Argumenty<br>
                                                     > Argumenty<br>
                                                     <br>
-                                                    2 kaczki:<br>
+                                                    8 Fok:<br>
                                                     > Argumenty<br>
                                                     > Argumenty<br>
                                                     </tr>
-                                            
-                                            
-                                            </table>
+                                                    <br>
+                                                    <br>
+                                                    <tr >
+                                                            1 kaczka:<br>
+                                                            > Argumenty<br>
+                                                            > Argumenty<br>
+                                                            <br>
+                                                            2 kaczki:<br>
+                                                            > Argumenty<br>
+                                                            > Argumenty<br>
+                                                            </tr>
 
 
-             </mat-tab>
-                </mat-tab-group>
-        </mat-tab>
-        <mat-tab label="Solo">
-                <mat-tab-group>
-                        <mat-tab label="News">
-                                <mat-form-field>
-                                        <mat-select [(value)]="selected">
-                                          <mat-option>None</mat-option>
-                                          <mat-option value="option1">Agata Wonak</mat-option>
-                                          <mat-option value="option2">Katarzyna Dróżdż</mat-option>
-                                          <mat-option value="option3">Tomasz Łydka</mat-option>
-                                          <mat-option value="option3">Rafał Owczański</mat-option>
-                                          <mat-option value="option3">Kajetan Piesynia</mat-option>
-                                        </mat-select>
-                                      </mat-form-field>
-                    <table style="width:100%">
-                        <tr>
-                            <h2>Przeczytaj artykuł i oceń<br></h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
-                        <hr>
-                        </tr>
+                                                    </table>
+
+
+                     </mat-tab>
+                        </mat-tab-group>
+                </mat-tab>
+                <mat-tab label="Solo">
+                        <mat-tab-group>
+                                <mat-tab label="News">
+                                        <mat-form-field>
+                                                <mat-select [(value)]="selected">
+                                                  <mat-option>None</mat-option>
+                                                  <mat-option value="option1">Agata Wonak</mat-option>
+                                                  <mat-option value="option2">Katarzyna Dróżdż</mat-option>
+                                                  <mat-option value="option3">Tomasz Łydka</mat-option>
+                                                  <mat-option value="option3">Rafał Owczański</mat-option>
+                                                  <mat-option value="option3">Kajetan Piesynia</mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                            <table style="width:100%">
                                 <tr>
-                                        <img src="{{ activeTask.picture}}" height="350" width="350">
-                                        <h1>{{ activeTask.header}}</h1>
-                                        <p>{{ activeTask.descriptionP1}}</p>
-                                        <p>{{ activeTask.descriptionP2}}</p>
-                                        <p>{{ activeTask.descriptionP3}}</p>
-                                </tr>
-                                <tr>
-                                        <mat-slider min="1" max="7" step="1"></mat-slider>
-                                </tr>
-                                <tr>
-                                        <a mat-raised-button class="login-btn"
-                                        routerLink="."
-                                        [disabled]="!nameIsValid"
-                                        (click)="logInAs(userType)">
-                                        Dalej
-                                     </a>
-                                </tr>
-                    </table>
-                        </mat-tab>
-                        <mat-tab label="Argumentacja">
-                                <mat-form-field>
-                                        <mat-select [(value)]="selected">
-                                          <mat-option>None</mat-option>
-                                          <mat-option value="option1">Agata Wonak</mat-option>
-                                          <mat-option value="option2">Katarzyna Dróżdż</mat-option>
-                                          <mat-option value="option3">Tomasz Łydka</mat-option>
-                                          <mat-option value="option3">Rafał Owczański</mat-option>
-                                          <mat-option value="option3">Kajetan Piesynia</mat-option>
-                                        </mat-select>
-                                      </mat-form-field>
-                                <table style="width:100%">
-                                <tr>
-                                        <h2>Poszukaj źródeł<br></h2>
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+                                    <h2>Przeczytaj artykuł i oceń<br></h2>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
                                 <hr>
                                 </tr>
-                                </table>
-                                <table style="width:100%">
-                                    <tr>
-                                        <h1>Twoje źródła</h1></tr>
-                                    <tr>
-                                            <td>1</td>
-                                            <td> <tr><mat-form-field class="">
-                                                            <input matInput placeholder="Wprowadź link" value="">
-                                                    </mat-form-field></tr>
-                                                    <tr>Dodaj komentarz</tr>
-                                                    <tr>
-                                                    Moc
-                                                    <mat-slider min="1" max="10" step="1">Moc</mat-slider>
-                                                    </tr>
+                                        <tr>
+                                                <img src="{{ activeTask.picture}}" height="350" width="350">
+                                                <h1>{{ activeTask.header}}</h1>
+                                                <p>{{ activeTask.descriptionP1}}</p>
+                                                <p>{{ activeTask.descriptionP2}}</p>
+                                                <p>{{ activeTask.descriptionP3}}</p>
+                                        </tr>
+                                        <tr>
+                                                <mat-slider min="1" max="7" step="1"></mat-slider>
+                                        </tr>
+                                        <tr>
+                                                <a mat-raised-button class="login-btn"
+                                                routerLink="."
+                                                [disabled]="!nameIsValid"
+                                                (click)="logInAs(userType)">
+                                                Dalej
+                                             </a>
+                                        </tr>
+                            </table>
+                                </mat-tab>
+                                <mat-tab label="Argumentacja">
+                                        <mat-form-field>
+                                                <mat-select [(value)]="selected">
+                                                  <mat-option>None</mat-option>
+                                                  <mat-option value="option1">Agata Wonak</mat-option>
+                                                  <mat-option value="option2">Katarzyna Dróżdż</mat-option>
+                                                  <mat-option value="option3">Tomasz Łydka</mat-option>
+                                                  <mat-option value="option3">Rafał Owczański</mat-option>
+                                                  <mat-option value="option3">Kajetan Piesynia</mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                        <table style="width:100%">
+                                        <tr>
+                                                <h2>Poszukaj źródeł<br></h2>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+                                        <hr>
+                                        </tr>
+                                        </table>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <h1>Twoje źródła</h1></tr>
+                                            <tr>
+                                                    <td>1</td>
+                                                    <td> <tr><mat-form-field class="">
+                                                                    <input matInput placeholder="Wprowadź link" value="">
+                                                            </mat-form-field></tr>
+                                                            <tr>Dodaj komentarz</tr>
+                                                            <tr>
+                                                            Moc
+                                                            <mat-slider min="1" max="10" step="1">Moc</mat-slider>
+                                                            </tr>
+                                                            </td>
+                                                    <td> <mat-radio-group>
+                                                                    <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                                                    <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                                            </mat-radio-group>
                                                     </td>
-                                            <td> <mat-radio-group>
-                                                            <mat-radio-button value="1">potwierdza</mat-radio-button>
-                                                            <mat-radio-button value="2">zaprzecza</mat-radio-button>
-                                                    </mat-radio-group>                           
-                                            </td>
-                                    </tr>
-                                    <tr>
-                                            <td>2</td>
-                                            <td> <tr><mat-form-field class="">
-                                                            <input matInput placeholder="Wprowadź link" value="">
-                                                    </mat-form-field></tr>
-                                                    <tr>Dodaj komentarz</tr>
-                                                    <tr>
-                                                    Moc
-                                                    <mat-slider min="1" max="10" step="1">Moc</mat-slider>
-                                                    </tr>
-                                                    </td>
-                                            <td> <mat-radio-group>
-                                                            <mat-radio-button value="1">potwierdza</mat-radio-button>
-                                                            <mat-radio-button value="2">zaprzecza</mat-radio-button>
-                                                    </mat-radio-group>                           
-                                            </td>
-                                    </tr>
-                                    <tr>
-                                            <td>3</td>
-                                            <td> <tr><mat-form-field class="">
-                                                            <input matInput placeholder="Wprowadź link" value="">
-                                                    </mat-form-field></tr>
-                                                    <tr>Dodaj komentarz</tr>
-                                                    <tr>
-                                                    Moc
-                                                    <mat-slider min="1" max="10" step="1"></mat-slider>
-                                                    </tr>
-                                                    </td>
-                                            <td> <mat-radio-group>
-                                                            <mat-radio-button value="1">potwierdza</mat-radio-button>
-                                                            <mat-radio-button value="2">zaprzecza</mat-radio-button>
-                                                    </mat-radio-group>                           
-                                            </td>
-                                    </tr>
-                                    <tr>
-                                                    <a mat-raised-button class="login-btn"
-                                                    routerLink="."
-                                                    [disabled]="!nameIsValid"
-                                                    (click)="logInAs(userType)">
-                                                    Dalej
-                                                 </a>
                                             </tr>
-                    </table>          
-                        </mat-tab>
-                        <mat-tab label="Weryfikacja">
-                                <mat-form-field>
-                                        <mat-select [(value)]="selected">
-                                          <mat-option>None</mat-option>
-                                          <mat-option value="option1">Agata Wonak</mat-option>
-                                          <mat-option value="option2">Katarzyna Dróżdż</mat-option>
-                                          <mat-option value="option3">Tomasz Łydka</mat-option>
-                                          <mat-option value="option3">Rafał Owczański</mat-option>
-                                          <mat-option value="option3">Kajetan Piesynia</mat-option>
-                                        </mat-select>
-                                      </mat-form-field>
-                                    <table style="width:100%">
-                                                    <tr>
-                                                        <h2>Przeczytaj artykuł i oceń<br></h2>
-                                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
-                                                    <hr>
+                                            <tr>
+                                                    <td>2</td>
+                                                    <td> <tr><mat-form-field class="">
+                                                                    <input matInput placeholder="Wprowadź link" value="">
+                                                            </mat-form-field></tr>
+                                                            <tr>Dodaj komentarz</tr>
+                                                            <tr>
+                                                            Moc
+                                                            <mat-slider min="1" max="10" step="1">Moc</mat-slider>
+                                                            </tr>
+                                                            </td>
+                                                    <td> <mat-radio-group>
+                                                                    <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                                                    <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                                            </mat-radio-group>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>3</td>
+                                                    <td> <tr><mat-form-field class="">
+                                                                    <input matInput placeholder="Wprowadź link" value="">
+                                                            </mat-form-field></tr>
+                                                            <tr>Dodaj komentarz</tr>
+                                                            <tr>
+                                                            Moc
+                                                            <mat-slider min="1" max="10" step="1"></mat-slider>
+                                                            </tr>
+                                                            </td>
+                                                    <td> <mat-radio-group>
+                                                                    <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                                                    <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                                            </mat-radio-group>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                            <a mat-raised-button class="login-btn"
+                                                            routerLink="."
+                                                            [disabled]="!nameIsValid"
+                                                            (click)="logInAs(userType)">
+                                                            Dalej
+                                                         </a>
                                                     </tr>
+                            </table>
+                                </mat-tab>
+                                <mat-tab label="Weryfikacja">
+                                        <mat-form-field>
+                                                <mat-select [(value)]="selected">
+                                                  <mat-option>None</mat-option>
+                                                  <mat-option value="option1">Agata Wonak</mat-option>
+                                                  <mat-option value="option2">Katarzyna Dróżdż</mat-option>
+                                                  <mat-option value="option3">Tomasz Łydka</mat-option>
+                                                  <mat-option value="option3">Rafał Owczański</mat-option>
+                                                  <mat-option value="option3">Kajetan Piesynia</mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                            <table style="width:100%">
                                                             <tr>
-                                                                    <img src="{{ activeTask.picture}}" height="350" width="350">
-                                                                    <h1>{{ activeTask.header}}</h1>
-                                                                    <p>{{ activeTask.descriptionP1}}</p>
-                                                                    <p>{{ activeTask.descriptionP2}}</p>
-                                                                    <p>{{ activeTask.descriptionP3}}</p>
+                                                                <h2>Przeczytaj artykuł i oceń<br></h2>
+                                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+                                                            <hr>
                                                             </tr>
-                                                            <tr>
-                                                                    <mat-slider min="1" max="7" step="1"></mat-slider>
-                                                            </tr>
-                                                            <tr>
-                                                                    <a mat-raised-button class="login-btn"
-                                                                    routerLink="."
-                                                                    [disabled]="!nameIsValid"
-                                                                    (click)="logInAs(userType)">
-                                                                    Dalej
-                                                                 </a>
-                                                            </tr>
-                                                </table>
-                        </mat-tab>
-                      </mat-tab-group>                  
-        </mat-tab>
-</mat-tab-group>
+                                                                    <tr>
+                                                                            <img src="{{ activeTask.picture}}" height="350" width="350">
+                                                                            <h1>{{ activeTask.header}}</h1>
+                                                                            <p>{{ activeTask.descriptionP1}}</p>
+                                                                            <p>{{ activeTask.descriptionP2}}</p>
+                                                                            <p>{{ activeTask.descriptionP3}}</p>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <mat-slider min="1" max="7" step="1"></mat-slider>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <a mat-raised-button class="login-btn"
+                                                                            routerLink="."
+                                                                            [disabled]="!nameIsValid"
+                                                                            (click)="logInAs(userType)">
+                                                                            Dalej
+                                                                         </a>
+                                                                    </tr>
+                                                        </table>
+                                </mat-tab>
+                              </mat-tab-group>
+                </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<!-- 
+
+
+<!--
 <p>
     Aktywne zadanie to: {{ activeTask.name}}
   </p>
   <p>
   Tak odpowiadali uczniowie:
   </p>
-  
+
   <ul>
       <li *ngFor="let activetaskStudentSolution of activetaskStudentSolutions">
           {{ getStudentName(activetaskStudentSolution.userId) }}
