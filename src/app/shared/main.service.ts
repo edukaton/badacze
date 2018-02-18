@@ -69,43 +69,81 @@ export class MainService {
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
 
                   {id: 3,
-                name: "Morderczy kefir z Krasnystawu",
-                picture: "http://via.placeholder.com/350x150",
-                video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
-                category: "Przyroda",
-                visibility: "Public", //private not supported yet
+                    name: " Czy Twoje dziecko gra w Pokemony? Może stracić życie!",
+                    picture: "https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwww.thinkgeek.com%2Fimages%2Fproducts%2Fadditional%2Flarge%2Fjgpo_poke_ball_serving_bowl_set_closed.jpg",
+                    category: "Astrofizyka",
+                    header: " Czy Twoje dziecko gra w Pokemony? Może stracić życie!",
+                    taskdescription: "Przenalizuj załączone materiały",
+                    difficulty: "Poziom 5",
+                    hastaskzero: "yes"},
+
+                  {id: 4,
+                name: "Mickiewicz - Romantyk czy Pozytywiska",
+                picture: "http://czytelniczy.pl/wp-content/uploads/2017/10/mickiewicz.jpg",
+                category: "Język polski",
                 header: "Przynieś choinki do zoo w Chorzowie",
-                taskdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eu erat ut varius. Vivamus a laoreet ligula, non consequat arcu. Duis at ultrices tellus. Nam vitae nunc pharetra nunc sodales tristique. Nunc tristique varius nulla in condimentum. Vestibulum vitae feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-                descriptionP1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eu erat ut varius. Vivamus a laoreet ligula, non consequat arcu. Duis at ultrices tellus. Nam vitae nunc pharetra nunc sodales tristique. Nunc tristique varius nulla in condimentum. Vestibulum vitae feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-                descriptionP2: "Nullam pellentesque tincidunt placerat. Quisque vitae mauris quam. Donec eget eros ac sem varius consectetur. Nunc maximus mattis est sed vehicula. Vestibulum imperdiet ligula eget placerat viverra. Phasellus aliquam scelerisque dui, eget finibus mi egestas ut. Nunc id mattis leo. Nam eget tortor lectus. Nulla dapibus ligula vitae ex tempus faucibus. Curabitur porta, diam ac auctor auctor, dolor ligula fringilla justo, in interdum justo nisi non lectus. Pellentesque quis augue metus. In at nibh faucibus, dapibus est ut, vulputate enim. Nam vehicula aliquet dui, id laoreet ex auctor fermentum.",
-                descriptionP3: "Nunc facilisis tellus vel arcu pharetra, a faucibus est vehicula. Donec volutpat, eros eget malesuada varius, risus eros tempus nulla, id sollicitudin neque dui sit amet lacus. Nullam a libero ipsum. Sed a aliquet orci, id malesuada est. Maecenas ac tortor neque. Curabitur sit amet nulla rutrum, ultricies tellus eu, pharetra dui. Nullam consectetur sem lectus, sed tincidunt metus pellentesque vitae. Nulla aliquam egestas porttitor. Proin sed dolor ultricies, facilisis ante ut, congue sem. Sed dui mi, tempor sit amet aliquam at, posuere et lectus. Duis porttitor leo condimentum massa aliquam iaculis.",
-                difficulty: "Poziom 1", //difficulty low, medium, high
-                hastaskzero: "yes", //boolean
+                taskdescription: "Przenalizuj załączone materiały",
+                difficulty: "Poziom 5",
+                hastaskzero: "yes"},
 
-                acceptanceCriteria: [
-                  {criterion: "Lorem ipsum dolor sit amet"},
-                  {criterion: "In mattis nisl quis ornare viverra."},
-                  {criterion: "Cras sed libero volutpat, elementum lacus"}]},
+                {id: 5,
+                  name: "W ciągu 48 godzin naprawili system szkolny. Kim są Badacze?",
+                  picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fwudsilesia.pl%2Fstatic%2Fimg%2Fbadacze.b4a35f3.png",
+                  category: "Edukacja",
+                  header: "W ciągu 48 godzin naprawili system szkolny. Kim są Badacze?",
+                  taskdescription: "Przenalizuj załączone materiały",
+                  difficulty: "Poziom 5",
+                  hastaskzero: "yes"},
 
-                {id: 4,
-                name: "Samochód w kosmosie",
-                picture: "http://via.placeholder.com/140x100",
-                video: "https://www.youtube.com/watch?v=jWkMhCLkVOg",
-                category: "Fizyka",
-                visibility: "Public", //private not supported yet
-                header: "In mattis nisl quis ornare viverra.",
-                taskdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eu erat ut varius. Vivamus a laoreet ligula, non consequat arcu. Duis at ultrices tellus. Nam vitae nunc pharetra nunc sodales tristique. Nunc tristique varius nulla in condimentum. Vestibulum vitae feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-                descriptionP1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eu erat ut varius. Vivamus a laoreet ligula, non consequat arcu. Duis at ultrices tellus. Nam vitae nunc pharetra nunc sodales tristique. Nunc tristique varius nulla in condimentum. Vestibulum vitae feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-                descriptionP2: "Nullam pellentesque tincidunt placerat. Quisque vitae mauris quam. Donec eget eros ac sem varius consectetur. Nunc maximus mattis est sed vehicula. Vestibulum imperdiet ligula eget placerat viverra. Phasellus aliquam scelerisque dui, eget finibus mi egestas ut. Nunc id mattis leo. Nam eget tortor lectus. Nulla dapibus ligula vitae ex tempus faucibus. Curabitur porta, diam ac auctor auctor, dolor ligula fringilla justo, in interdum justo nisi non lectus. Pellentesque quis augue metus. In at nibh faucibus, dapibus est ut, vulputate enim. Nam vehicula aliquet dui, id laoreet ex auctor fermentum.",
-                descriptionP3: "Nunc facilisis tellus vel arcu pharetra, a faucibus est vehicula. Donec volutpat, eros eget malesuada varius, risus eros tempus nulla, id sollicitudin neque dui sit amet lacus. Nullam a libero ipsum. Sed a aliquet orci, id malesuada est. Maecenas ac tortor neque. Curabitur sit amet nulla rutrum, ultricies tellus eu, pharetra dui. Nullam consectetur sem lectus, sed tincidunt metus pellentesque vitae. Nulla aliquam egestas porttitor. Proin sed dolor ultricies, facilisis ante ut, congue sem. Sed dui mi, tempor sit amet aliquam at, posuere et lectus. Duis porttitor leo condimentum massa aliquam iaculis.",
-                difficulty: "Poziom 2", //difficulty low, medium, high
-                hastaskzero: "no", //boolean
+                  {id: 6,
+                    name: "Zenon Ziembiewicz: Był Karierowiczem czy robił karierę?",
+                    picture: "https://cdn.bonito.pl/zdjecia/8/a6-granica-kolorowe-ilustrac.jpg",
+                    category: "Język polski",
+                    header: "Zenon Ziembiewicz: Był Karierowiczem czy robił karierę?",
+                    taskdescription: "Przenalizuj załączone materiały",
+                    difficulty: "Poziom 4",
+                    hastaskzero: "yes"},
 
-                acceptanceCriteria: [
-                    {criterion: "im. Fusce pellentesque ac met"},
-                    {criterion: "Curabitur maximus nisl ac justo accumsan au"},
-                    {criterion: "c justo accumsan a"}]
-  }];
+                    {id: 7,
+                      name: "Przyjaciele na cenzurowanym. Po tym artykule wstrzymają emisję",
+                      picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fwww.fuse.tv%2Fimage%2F56981abd8ae9e34f030000c0%2F816%2F545%2Ffriends-cast-photo-nbc.jpg",
+                      category: "Media i rozrywka",
+                      header: "Przyjaciele na cenzurowanym. Po tym artykule wstrzymają emisję",
+                      taskdescription: "Przenalizuj załączone materiały",
+                      difficulty: "Poziom 3",
+                      hastaskzero: "yes"},
+
+                      {id: 8,
+                        name: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
+                        picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fnarnia%2Fimages%2F4%2F4b%2FNarniaWardrobe.jpg%2Frevision%2Flatest%2Fscale-to-width-down%2F640%3Fcb%3D20090103195137",
+                        category: "Media i rozrywka",
+                        header: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
+                        taskdescription: "Przenalizuj załączone materiały",
+                        difficulty: "Poziom 1",
+                        hastaskzero: "yes"},
+
+
+                          {id: 9,
+                            name: "Amerykańscy naukowcy udowodnili, że Ziemia jest płaska!",
+                            picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2F1.bp.blogspot.com%2F-eMFXCwSkRuA%2FWa2AAv3WEFI%2FAAAAAAAANV0%2Fmn_C6taEyw4NPOexvsgd1yK8A1AvaNLswCLcBGAs%2Fs1600%2FFlat%252BEarthers%252BClaim%252BThe%252BSolar%252BEclipse%252BJust%252BProved%252BEarth%252BIs%252BFlat.jpg",
+                            category: "Astrofizyka",
+                            header: "Amerykańscy naukowcy udowodnili, że Ziemia jest płaska!",
+                            taskdescription: "Przenalizuj załączone materiały",
+                            difficulty: "Poziom 2",
+                            hastaskzero: "yes"},
+
+                            {id: 10,
+                              name: " Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",
+                              picture: "https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwww.komputerswiat.pl%2Fmedia%2F2015%2F169%2F3910775%2F3.jpg",
+                              category: "Zdrowie",
+                              header: "Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",
+                              taskdescription: "Przenalizuj załączone materiały",
+                              difficulty: "Poziom 3",
+                              hastaskzero: "yes"}
+      
+      
+
+              ];
 
   taskStudentInitialRating: any = [{id: 1,
                                 taskId: 1,
