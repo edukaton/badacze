@@ -3,8 +3,10 @@ import { RouterModule, Routes } from '@angular/router'
 
 import { LoginComponent }      from './login/login.component';
 import { TaskdetailsComponent }      from './taskdetails/taskdetails.component';
+import { InitialstudentratingComponent }      from './initialstudentrating/initialstudentrating.component';
 import { UserComponent }      from './user/user.component';
 import { MainComponent } from './base/main/main.component';
+import {DisplaytasksolutionComponent} from './displaytasksolution/displaytasksolution.component';
 
 import { AuthService } from './shared/auth.service'
 
@@ -25,6 +27,14 @@ const routes: Routes = [
     {
     path: 'alltasks',
     component: MainComponent
+  },
+  {
+    path: 'taskinitialrating',
+    component: InitialstudentratingComponent
+  },
+  {
+    path: 'tasksolution',
+    component: DisplaytasksolutionComponent
   } 
 ];
 

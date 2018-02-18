@@ -1,6 +1,140 @@
-<p>
-    Aktywne zadanie to: {{ activeTask.name}}
-  </p>
-  <p>
-  Twoja wstępna ocena to: {{activeTaskStudentInitialRating.rating}}  
-  </p>  
+<mat-tab-group>
+    <mat-tab label="News">
+<table style="width:100%">
+    <tr>
+        <h2>Przeczytaj artykuł i oceń<br></h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+    <hr>
+    </tr>
+            <tr>
+                    <img src="{{ activeTask.picture}}" height="350" width="350">
+                    <h1>{{ activeTask.header}}</h1>
+                    <p>{{ activeTask.descriptionP1}}</p>
+                    <p>{{ activeTask.descriptionP2}}</p>
+                    <p>{{ activeTask.descriptionP3}}</p>
+            </tr>
+            <tr>
+                    <mat-slider min="1" max="7" step="1"></mat-slider>
+            </tr>
+            <tr>
+                    <a mat-raised-button class="login-btn"
+                    routerLink="."
+                    [disabled]="!nameIsValid"
+                    (click)="logInAs(userType)">
+                    Dalej
+                 </a>
+            </tr>
+</table>
+    </mat-tab>
+    <mat-tab label="Argumentacja">
+            <table style="width:100%">
+            <tr>
+                    <h2>Poszukaj źródeł<br></h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+            <hr>
+            </tr>
+            </table>
+            <table style="width:100%">
+                <tr>
+                    <h1>Twoje źródła</h1></tr>
+                <tr>
+                        <td>1</td>
+                        <td> <tr><mat-form-field class="">
+                                        <input matInput placeholder="Wprowadź link" value="">
+                                </mat-form-field></tr>
+                                <tr>Dodaj komentarz</tr>
+                                <tr>
+                                Moc
+                                <mat-slider min="1" max="10" step="1">Moc</mat-slider>
+                                </tr>
+                                </td>
+                        <td> <mat-radio-group>
+                                        <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                        <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                </mat-radio-group>                           
+                        </td>
+                </tr>
+                <tr>
+                        <td>2</td>
+                        <td> <tr><mat-form-field class="">
+                                        <input matInput placeholder="Wprowadź link" value="">
+                                </mat-form-field></tr>
+                                <tr>Dodaj komentarz</tr>
+                                <tr>
+                                Moc
+                                <mat-slider min="1" max="10" step="1">Moc</mat-slider>
+                                </tr>
+                                </td>
+                        <td> <mat-radio-group>
+                                        <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                        <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                </mat-radio-group>                           
+                        </td>
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td> <tr><mat-form-field class="">
+                                        <input matInput placeholder="Wprowadź link" value="">
+                                </mat-form-field></tr>
+                                <tr>Dodaj komentarz</tr>
+                                <tr>
+                                Moc
+                                <mat-slider min="1" max="10" step="1"></mat-slider>
+                                </tr>
+                                </td>
+                        <td> <mat-radio-group>
+                                        <mat-radio-button value="1">potwierdza</mat-radio-button>
+                                        <mat-radio-button value="2">zaprzecza</mat-radio-button>
+                                </mat-radio-group>                           
+                        </td>
+                </tr>
+                <tr>
+                                <a mat-raised-button class="login-btn"
+                                routerLink="."
+                                [disabled]="!nameIsValid"
+                                (click)="logInAs(userType)">
+                                Dalej
+                             </a>
+                        </tr>
+</table>          
+    </mat-tab>
+    <mat-tab label="Weryfikacja">
+                <table style="width:100%">
+                                <tr>
+                                    <h2>Przeczytaj artykuł i oceń<br></h2>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
+                                <hr>
+                                </tr>
+                                        <tr>
+                                                <img src="{{ activeTask.picture}}" height="350" width="350">
+                                                <h1>{{ activeTask.header}}</h1>
+                                                <p>{{ activeTask.descriptionP1}}</p>
+                                                <p>{{ activeTask.descriptionP2}}</p>
+                                                <p>{{ activeTask.descriptionP3}}</p>
+                                        </tr>
+                                        <tr>
+                                                <mat-slider min="1" max="7" step="1"></mat-slider>
+                                        </tr>
+                                        <tr>
+                                                <a mat-raised-button class="login-btn"
+                                                routerLink="."
+                                                [disabled]="!nameIsValid"
+                                                (click)="logInAs(userType)">
+                                                Dalej
+                                             </a>
+                                        </tr>
+                            </table>
+
+
+
+
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+
+
+
+
+

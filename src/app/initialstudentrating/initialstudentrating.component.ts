@@ -13,6 +13,8 @@ export class InitialstudentratingComponent implements OnInit {
   users;
   taskStudentInitialRatings;
   activeTaskStudentInitialRating;
+  taskStudentFinalRatings;
+  activeTaskStudentFinalRating;
 
   constructor(
     private _main: MainService) {
@@ -26,6 +28,12 @@ export class InitialstudentratingComponent implements OnInit {
 
     this.users = this._main.user
     this.activeUser = this.users[1];
+
+    this.taskStudentFinalRatings = this._main.taskStudentFinalRating  
+ 
+    this.activeTaskStudentFinalRating = this.taskStudentFinalRatings.find(
+      taskStudentFinalRating => taskStudentFinalRating.taskId === this.activeTask.id && taskStudentFinalRating.userId === this.activeUser.id)
+ 
     
     this.taskStudentInitialRatings = this._main.taskStudentInitialRating  
  
