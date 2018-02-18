@@ -1,0 +1,109 @@
+
+
+
+$slider-width-number: 300
+$slider-width: #{$slider-width-number}px
+$slider-height: 4px
+$background-slider: #8594a8
+$background-filled-slider: $brand-primary
+$thumb-width: 16px
+$thumb-height: 16px
+$thumb-radius: 8px
+$thumb-background: #fff
+$thumb-border: 0px solid #777
+$thumb-shadow: -1px 0 3px 0 rgba(#000, .25)
+$shadow-size: -6px
+$fit-thumb-in-slider: -6px
+
+@function makelongshadow($color, $size)
+  $val: 5px 0 0 $size $color
+
+  @for $i from 6 through $slider-width-number
+    $val: #{$val}, #{$i}px 0 0 $size #{$color}
+
+
+  @return $val
+
+input[type="range"]
+  align-items: center
+  appearance: none
+  background: none
+  cursor: pointer
+  display: flex
+  // height: 100%
+  min-height: 50px
+  overflow: hidden
+  width: $slider-width
+
+  &:focus
+    box-shadow: none
+    outline: none
+
+
+  &::-webkit-slider-runnable-track
+    background: $background-filled-slider
+    content: ''
+    height: $slider-height
+    pointer-events: none
+    border-radius: 2px
+
+
+  &::-webkit-slider-thumb
+    width: $thumb-width
+    height: $thumb-height
+
+    appearance: none
+    background: $thumb-background
+    border-radius: $thumb-radius
+    box-shadow: $thumb-shadow, makelongshadow($background-slider, $shadow-size)
+    margin-top: $fit-thumb-in-slider
+    border: $thumb-border
+
+  &::-moz-range-track
+    width: $slider-width
+    height: $slider-height
+    border-radius: 2px
+
+  &::-moz-range-thumb
+    width: $thumb-width
+    height: $thumb-height
+    background: $thumb-background
+    border-radius: $thumb-radius
+    border: $thumb-border
+    position: relative
+
+  &::-moz-range-progress
+    height: $slider-height
+    background: $background-filled-slider
+    border: 0
+    margin-top: 0
+    // border-radius: 2px
+
+  &::-ms-track
+    background: transparent
+    border: 0
+    border-color: transparent
+    border-radius: 0
+    border-width: 0
+    color: transparent
+    height: $slider-height
+    margin-top: 10px
+    width: $slider-width
+
+  &::-ms-thumb
+    width: $thumb-width
+    height: $thumb-height
+    background: $thumb-background
+    border-radius: $thumb-radius
+    border: $thumb-border
+
+  &::-ms-fill-lower
+    background: $background-filled-slider
+    border-radius: 0
+
+  &::-ms-fill-upper
+    background: $background-slider
+    border-radius: 0
+
+  &::-ms-tooltip
+    display: none

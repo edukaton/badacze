@@ -1,0 +1,33 @@
+.status
+  .card-device-inner
+    img
+      opacity: 0.1
+    pointer-events: none
+  &-inner
+    position: absolute
+    text-align: center
+    left: 50%
+    transform: translateX(-50%)
+
+    // top: 50%
+    // left: 50%
+    // transform: translate(-50%, -50%)
+    img
+      margin-top: 2rem
+    p
+      font-size: 12px
+      margin-top: 2rem
+  &-icon
+    width: 4rem
+    height: 4rem
+    // position: absolute
+    left: 50%
+    top: 1.5rem
+    // transform: translateX(-50%)
+    margin: auto
+  &-waiting
+  &-disconnected
+    .status-icon
+      display: block
+  &-error
+  &-configuration

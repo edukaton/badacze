@@ -4,15 +4,15 @@
 /ui_old
 
 # compiled output
-/dist
-/dist-server
+# /dist
+# /dist-server
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
 
-# IDEs and editors
+# IDEs and editors 
 /.idea
 .project
 .classpath

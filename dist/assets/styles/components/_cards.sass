@@ -1,0 +1,86 @@
+.card
+  background-color: $card-bg
+  position: relative
+  border: 1px solid #e0e2e5
+  width: 11rem
+  height: 11rem
+  border-radius: 0.8rem
+
+  .settings-wrapper &.card-device
+    width: auto
+    height: auto
+    border: none
+    background-color: transparent
+
+  &-wrapper
+    padding: 0.5rem
+    &.settings-wrapper
+      padding: 0
+      position: relative
+  &-device-inner
+    .settings-wrapper &
+      width: 3rem
+    img
+      max-width: 4.4rem
+      height: auto
+      display: block
+      margin: 1.3rem auto 0.5rem auto
+      .settings-wrapper &
+        max-width: 3rem
+        max-height: 3rem
+        margin: auto
+    p
+      margin-bottom: 0
+
+  &-text
+    text-align: center
+    .table-devices &
+      display: none
+
+  &-title
+    font-size: 1.3rem
+    .settings-wrapper &
+      display: none
+  &-description
+    font-size: 1.1rem
+    color: $brand-primary-lighter
+    .settings-wrapper &
+      display: none
+
+  &-xs
+    width: 5.5rem
+    height: 5.5rem
+  &-sm
+    width: 7.5rem
+    height: 7.5rem
+
+
+
+  &-has-status
+    .card-device-inner
+      img
+        opacity: 0.15
+      .card-description
+        opacity: 0
+
+  &-transparent
+    background-color: transparent
+
+  &.active
+    border-color: $brand-primary
+
+  &-action
+    .card-inner
+    &-img
+      width: 14px
+      height: 14px
+    &-label
+      display: block
+      line-height: 14px
+      font-size: 1rem
+      font-weight: bold
+      color: #7F8FA4
+      margin-bottom: 0
+  &-button
+    &-count
+      position: relative

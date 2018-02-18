@@ -1,0 +1,77 @@
+@import ~bootstrap-slider/dist/css/bootstrap-slider.min.css
+
+.slider
+  margin-bottom: 1rem
+  &.slider-vertical
+    .slider-track
+      width: 4px
+      left: 47%
+  &-track-high
+    background: #FF7800
+    app-slider-cold &
+      background: transparent
+    // app-slider-heat &
+      background: #FF7800
+  &-track-low
+    background: #0DD9FD
+
+  &-selection
+    app-slider-cold &
+      background: #0DD9FD
+      // border-radius:
+//tooltip
+.tooltip
+  &.left
+    margin: 0
+    padding: 0
+  &-inner
+    background-color: $white
+    border: 1px solid #DFE2E5
+    color: $brand-text
+    font-size: 1.2rem
+    padding: 0.6rem 1.5rem
+  &-arrow
+    display: none
+  &-max
+    &.left
+      right: auto!important
+      left: 100%
+      margin-left: .7rem
+  &-min
+    &.left
+      margin-right: 0.5rem
+
+  &-main
+    &.left
+      margin-right: .5rem
+  &-main
+    &.right
+      margin-right: .5rem
+
+//handle
+.slider-handle
+  border-radius: 50%
+  width: 2.2rem
+  height: 2.2rem
+  box-shadow: 0 6px 8px 0 rgba(53,64,82,0.07)
+  &.custom
+    background: $white
+    &::before
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+.min
+  &-slider-handle
+    &.slider-handle.custom
+      &::before
+        content: url(./assets/icon/ui/heating.svg)
+        app-slider-cold &
+          content: url(./assets/icon/ui/cooling.svg)
+
+.max
+  &-slider-handle
+    &.slider-handle.custom
+      &::before
+        content: url(./assets/icon/ui/cooling.svg)
