@@ -11,7 +11,8 @@ import {
   MatChipsModule,
   MatGridListModule,
   MatTabsModule,
-  MatSliderModule
+  MatSliderModule,
+  MatSelectModule
 } from '@angular/material';
 
 
@@ -27,7 +28,8 @@ import {
     MatChipsModule,
     MatGridListModule,
     MatTabsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSelectModule
   ],
   exports: [
     MatButtonModule,
@@ -40,7 +42,8 @@ import {
     MatChipsModule,
     MatGridListModule,
     MatTabsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSelectModule
   ],
 })
 export class AngularMaterialModule {}
