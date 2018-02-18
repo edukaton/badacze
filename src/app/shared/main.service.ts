@@ -41,12 +41,7 @@ export class MainService {
                 visibility: "Public", //private not supported yet
                 taskdescription: "Przeanalizuj treść ogłoszenia zamieszczonego na portalu Facebook.",
                 difficulty: "Poziom 3", //difficulty low, medium, high
-                hastaskzero: "yes", //boolean
-
-                acceptanceCriteria: [
-                  {criterion: "Lorem ipsum dolor sit amet"},
-                  {criterion: "In mattis nisl quis ornare viverra."},
-                  {criterion: "Cras sed libero volutpat, elementum lacus"}]},
+                hastaskzero: "yes"},
 
                   {id: 2,
                 name: "Samochód Elona Muska walnie w Ziemię.",
@@ -112,7 +107,7 @@ export class MainService {
                       hastaskzero: "yes"},
 
                       {id: 8,
-                        name: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
+                        name: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się (..)",
                         picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fnarnia%2Fimages%2F4%2F4b%2FNarniaWardrobe.jpg%2Frevision%2Flatest%2Fscale-to-width-down%2F640%3Fcb%3D20090103195137",
                         category: "Media i rozrywka",
                         header: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
@@ -131,7 +126,7 @@ export class MainService {
                             hastaskzero: "yes"},
 
                             {id: 10,
-                              name: " Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",
+                              name: " Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat (..)!",
                               picture: "https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwww.komputerswiat.pl%2Fmedia%2F2015%2F169%2F3910775%2F3.jpg",
                               category: "Zdrowie",
                               header: "Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",
