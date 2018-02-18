@@ -36,7 +36,7 @@ export class MainService {
   task: any = [{
                 id: 1,
                 name: "Zoo w Chorzowie",
-                picture: "http://via.placeholder.com/350x150",
+                picture: "http://www.chorzowianin.pl/images/news/b_1471.jpg",
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
                 category: "Przyroda",
                 visibility: "Public", //private not supported yet
