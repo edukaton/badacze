@@ -14,11 +14,18 @@ export class TaskdetailsComponent implements OnInit {
     private _main: MainService) {
     
   }
+  
+  availableColors = [
+    { name: 'none', color: '' },
+    { name: 'Primary', color: 'primary' },
+    { name: 'Accent', color: 'accent' },
+    { name: 'Warn', color: 'warn' }
+  ];
 
   ngOnInit() {
     this.tasks = this._main.task
     this.activeTask = this.tasks[0];
-
+    
   }
   tasks;
 }
