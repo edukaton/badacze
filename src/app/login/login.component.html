@@ -4,14 +4,16 @@
       <div class="col-6">
         <div class="login-wrapper mat-elevation-z24">
           <div class="login-header">
-            <h1>Foka news</h1>
+            <img class="logo" src="{{ logo }}" alt="">
+            <!-- {{ logo }} -->
+            <!-- <h1>Foka news</h1> -->
           </div>
 
           <div class="login-body">
-              <mat-form-field class="">
+              <mat-form-field class="mb-5">
                 <input matInput placeholder="Imię" value="" [(ngModel)]="userName">
               </mat-form-field>
-            <mat-radio-group class="login-radio" [(ngModel)]="userType">
+            <mat-radio-group class="login-radio mb-5" [(ngModel)]="userType">
               <mat-radio-button class="" *ngFor="let user of userTypes" [value]="user.value">
                 {{user.name}}
               </mat-radio-button>

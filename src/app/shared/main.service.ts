@@ -15,6 +15,8 @@ export class MainService {
 
   data: any;
 
+  logo: string = '/assets/img/logo.png'
+
   // apiRoot: string = '/api';``
   // results: Object[];
   // loading: boolean;
@@ -36,7 +38,7 @@ export class MainService {
   task: any = [{
                 id: 1,
                 name: "Oddaj starą choinkę do chorzowskiego ZOO",
-                picture: "././assets/img/choinka_fake_news_1024.png",              
+                picture: "././assets/img/choinka_fake_news_1024.png",
                 category: "Przyroda",
                 visibility: "Public", //private not supported yet
                 taskdescription: "Przeanalizuj treść ogłoszenia zamieszczonego na portalu Facebook.",
