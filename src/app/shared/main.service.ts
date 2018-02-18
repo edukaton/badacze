@@ -56,12 +56,9 @@ export class MainService {
                 descriptionP2: "Jak donosi Daniel Clery w wywiadzie udzielonym dla ‚Science’, naukowcy specjalizujący się w dynamice orbitalnej dokonali obliczenia możliwej podróży samochodu w ciągu najbliższych kilku milionów lat. ",
                 descriptionP3: "Według ich szacunków istnieje 6 procent szans na to, że w ciągu ponad miliona lat, maszyna zderzy się z Ziemią. Choć nie da się dokładnie ustalić, dokąd zmierza Roadster Muska, można przyjąć pewne założenia. Hanno Rein z University of Toronto w Kanadzie i jego koledzy prowadzą badania, które obejmują modelowanie ruchu planetarnego, które zapewnią im odpowiednie narzędzia do zbadania dalszych losów samochodu kosmicznego. Udoskonalili oni swoje modele i przeprowadzili test, aby przewidzieć dalszą podróż samochodu. Ich wyniki pojawiają się w badaniu dostępnym na serwerze preprint arXiv. Obecnie Roadster zmierza w kierunku Marsa. Jak  napisał William Hardwood z CBS News, przemknie on w promieniu 69 milionów mil od Czerwonej Planety 10 czerwca, osiągając swoją najdalszą odległość od słońca (154,7 miliona mil) 9 listopada. Ale na tym jego podróż się nie skończy. Jak wyjaśnia Clery, grawitacja Słońca doprowadzi pojazd z powrotem do wewnętrznego układu słonecznego. Będzie on nadal krążył po naszej rodzinie planetarnej, wielokrotnie przecinając orbity Marsa, Ziemi i Wenus, podobnie jak asteroidy wewnętrznego układu słonecznego. Samochód Muska ma rozbić się o Ziemię ok. 2091 roku. Większość pojazdu najprawdopodobniej ulegnie spaleniu, nim dotrze na powierzchnię. Nie ma żadnego zagrożenia dla zdrowia i bezpieczeństwa – zapewnia Rein Clery.Spekulacje na temat miejsca pobytu samochodu skłoniły inżyniera Ben Pearsona do rozpoczęcia śledzenia samochodu za pomocą strony internetowej ‚Where is Roadster?’. Strona pokazuje pozycję Roadstera w kosmosie w porównaniu z Ziemią, Wenus, Merkurego, Marsem i Ceres, wykorzystując dane z NASA.Nikt nie wie dokładnie, jak zakończy się podróż Roadstera, ale upłynie jeszcze wiele czasu nim się dowiemy. Rein informuje CBS News, że naukowcy nie spodziewają się, że to odkrycie doprowadzi do nowego spojrzenia na astrofizykę. Ale dodaje, że „zabawa była fajna.” Źródło: CBS News",
                 difficulty: "Poziom 4", //difficulty low, medium, high
-                hastaskzero: "yes", //boolean
+                hastaskzero: "yes" //boolean
 
-                acceptanceCriteria: [
-                  {criterion: "Lorem ipsum dolor sit amet"},
-                  {criterion: "In mattis nisl quis ornare viverra."},
-                  {criterion: "Cras sed libero volutpat, elementum lacus"}]},
+               },
 
                   {id: 3,
                     name: " Czy Twoje dziecko gra w Pokemony? Może stracić życie!",
