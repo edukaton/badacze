@@ -5,10 +5,13 @@ import { LoginComponent }      from './login/login.component';
 import { TaskdetailsComponent }      from './taskdetails/taskdetails.component';
 import { UserComponent }      from './user/user.component';
 
+import { AuthService } from './shared/auth.service'
+
 const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+    // canActivate: [AuthService]
   },
   {
     path: 'task',
@@ -22,6 +25,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: [
+    AuthService
+  ]
 })
 export class AppRoutingModule {}
