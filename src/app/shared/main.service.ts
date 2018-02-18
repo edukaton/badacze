@@ -43,12 +43,7 @@ export class MainService {
                 visibility: "Public", //private not supported yet
                 taskdescription: "Przeanalizuj treść ogłoszenia zamieszczonego na portalu Facebook.",
                 difficulty: "Poziom 3", //difficulty low, medium, high
-                hastaskzero: "yes", //boolean
-
-                acceptanceCriteria: [
-                  {criterion: "Lorem ipsum dolor sit amet"},
-                  {criterion: "In mattis nisl quis ornare viverra."},
-                  {criterion: "Cras sed libero volutpat, elementum lacus"}]},
+                hastaskzero: "yes"},
 
                   {id: 2,
                 name: "Samochód Elona Muska walnie w Ziemię.",
@@ -61,12 +56,9 @@ export class MainService {
                 descriptionP2: "Jak donosi Daniel Clery w wywiadzie udzielonym dla ‚Science’, naukowcy specjalizujący się w dynamice orbitalnej dokonali obliczenia możliwej podróży samochodu w ciągu najbliższych kilku milionów lat. ",
                 descriptionP3: "Według ich szacunków istnieje 6 procent szans na to, że w ciągu ponad miliona lat, maszyna zderzy się z Ziemią. Choć nie da się dokładnie ustalić, dokąd zmierza Roadster Muska, można przyjąć pewne założenia. Hanno Rein z University of Toronto w Kanadzie i jego koledzy prowadzą badania, które obejmują modelowanie ruchu planetarnego, które zapewnią im odpowiednie narzędzia do zbadania dalszych losów samochodu kosmicznego. Udoskonalili oni swoje modele i przeprowadzili test, aby przewidzieć dalszą podróż samochodu. Ich wyniki pojawiają się w badaniu dostępnym na serwerze preprint arXiv. Obecnie Roadster zmierza w kierunku Marsa. Jak  napisał William Hardwood z CBS News, przemknie on w promieniu 69 milionów mil od Czerwonej Planety 10 czerwca, osiągając swoją najdalszą odległość od słońca (154,7 miliona mil) 9 listopada. Ale na tym jego podróż się nie skończy. Jak wyjaśnia Clery, grawitacja Słońca doprowadzi pojazd z powrotem do wewnętrznego układu słonecznego. Będzie on nadal krążył po naszej rodzinie planetarnej, wielokrotnie przecinając orbity Marsa, Ziemi i Wenus, podobnie jak asteroidy wewnętrznego układu słonecznego. Samochód Muska ma rozbić się o Ziemię ok. 2091 roku. Większość pojazdu najprawdopodobniej ulegnie spaleniu, nim dotrze na powierzchnię. Nie ma żadnego zagrożenia dla zdrowia i bezpieczeństwa – zapewnia Rein Clery.Spekulacje na temat miejsca pobytu samochodu skłoniły inżyniera Ben Pearsona do rozpoczęcia śledzenia samochodu za pomocą strony internetowej ‚Where is Roadster?’. Strona pokazuje pozycję Roadstera w kosmosie w porównaniu z Ziemią, Wenus, Merkurego, Marsem i Ceres, wykorzystując dane z NASA.Nikt nie wie dokładnie, jak zakończy się podróż Roadstera, ale upłynie jeszcze wiele czasu nim się dowiemy. Rein informuje CBS News, że naukowcy nie spodziewają się, że to odkrycie doprowadzi do nowego spojrzenia na astrofizykę. Ale dodaje, że „zabawa była fajna.” Źródło: CBS News",
                 difficulty: "Poziom 4", //difficulty low, medium, high
-                hastaskzero: "yes", //boolean
+                hastaskzero: "yes" //boolean
 
-                acceptanceCriteria: [
-                  {criterion: "Lorem ipsum dolor sit amet"},
-                  {criterion: "In mattis nisl quis ornare viverra."},
-                  {criterion: "Cras sed libero volutpat, elementum lacus"}]},
+               },
 
                   {id: 3,
                     name: " Czy Twoje dziecko gra w Pokemony? Może stracić życie!",
@@ -114,7 +106,7 @@ export class MainService {
                       hastaskzero: "yes"},
 
                       {id: 8,
-                        name: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
+                        name: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się (..)",
                         picture: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fnarnia%2Fimages%2F4%2F4b%2FNarniaWardrobe.jpg%2Frevision%2Flatest%2Fscale-to-width-down%2F640%3Fcb%3D20090103195137",
                         category: "Media i rozrywka",
                         header: "Bohosiewicz zaprosiła kamery do swojego mieszkania. To, co znajduje się za drzwiami szafy... Hit!",
@@ -133,7 +125,7 @@ export class MainService {
                             hastaskzero: "yes"},
 
                             {id: 10,
-                              name: " Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",
+                              name: " Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat (..)!",
                               picture: "https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwww.komputerswiat.pl%2Fmedia%2F2015%2F169%2F3910775%2F3.jpg",
                               category: "Zdrowie",
                               header: "Oglądanie filmów z bliska niszczy wzrok! Badanie sprzed 30 lat udowadnia okrutną prawdę!",

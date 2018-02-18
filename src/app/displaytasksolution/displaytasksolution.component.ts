@@ -7,7 +7,9 @@ import { MainService } from '../shared/main.service';
   styleUrls: ['./displaytasksolution.component.sass']
 })
 export class DisplaytasksolutionComponent implements OnInit {
-
+  logInAs;
+  userType;
+  selected;
   activeTask;
   tasks;
   users;
@@ -17,7 +19,7 @@ export class DisplaytasksolutionComponent implements OnInit {
 
   constructor(
     private _main: MainService) {
-    
+
   }
 
   ngOnInit() {
@@ -25,9 +27,9 @@ export class DisplaytasksolutionComponent implements OnInit {
     this.activeTask = this.tasks[0];
 
     this.users = this._main.user
-    
+
     this.taskStudentSolutions = this._main.taskStudentSolution
- 
+
     this.activetaskStudentSolutions = this.taskStudentSolutions.filter(
       taskStudentSolution => taskStudentSolution.taskId === this.activeTask.id)
   }

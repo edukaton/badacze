@@ -6,8 +6,8 @@
           <h2>Treść zadania: {{ activeTask.name}}<br></h2>
           <p>{{ activeTask.taskdescription}}</p>
           <mat-chip-list>
-              <mat-chip selected="true" [color]="primary">{{ activeTask.difficulty }}</mat-chip>
-              <mat-chip selected="true" [color]="accent">{{ activeTask.category }}</mat-chip>
+              <mat-chip selected="true">{{ activeTask.difficulty }}</mat-chip>
+              <mat-chip selected="true">{{ activeTask.category }}</mat-chip>
           </mat-chip-list>
         </div>
       </div>
@@ -28,24 +28,6 @@
             <p>{{ activeTask.descriptionP3}}</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-
-<section class="criteria">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <h2>Kryteria akceptacji</h2>
-        <ul class="criteria-ul mat-elevation-z24">
-                <li *ngFor="let acceptanceCriteria of activeTask.acceptanceCriteria">
-                        <mat-checkbox class="example-margin">{{ acceptanceCriteria.criterion }}</mat-checkbox>
-                </li>
-            </ul>
       </div>
     </div>
   </div>
