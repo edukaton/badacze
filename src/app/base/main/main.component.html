@@ -1,23 +1,23 @@
 <!-- <router-outlet></router-outlet> -->
-<h2>Obecnie aktywny task: {{activeTask.name}}</h2>
+<tr>
+    <div class="login-body">
+        <mat-icon>search</mat-icon>
+        <mat-form-field class="">
+          <input matInput placeholder="Szukaj zadania" value="">
+        </mat-form-field>
+        <mat-icon>list</mat-icon>
+    </div>
 
-<ul>
-    <li *ngFor="let task of tasks">
-      {{ task.name }}<br>
-      {{ task.category }}<br>
-      {{ task.header}}<br>
-      {{ task.description}}<br>
-      {{ task.difficulty }}<br>
-      {{ task.hastaskzero}}<br>
-      <ul>
-        <li *ngFor="let picture of task.picture">
-                <img src="{{ picture.url}}" alt="{{ picture.title }}">
-        </li>
-      </ul>
-      <ul>
-            <li *ngFor="let acceptanceCriteria of task.acceptanceCriteria">
-                    <label><input type="checkbox">{{ acceptanceCriteria.criterion }}</label>
-            </li>
-      </ul>
-    </li>
-</ul>
+</tr>
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile
+    *ngFor="let task of tasks"
+    [style.background]="lightblue"
+    >{{ task.name }}</mat-grid-tile>
+    
+</mat-grid-list>
+
+<!-- [style.background]="tile.color" -->
+

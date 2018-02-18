@@ -1,22 +1,35 @@
 <!-- <router-outlet></router-outlet> -->
-
-<P>
-{{ activeTask.name}}<br>
-{{ activeTask.category }}<br>
-{{ activeTask.header}}<br>
-{{ activeTask.description}}<br>
-{{ activeTask.difficulty }}<br>
-{{ activeTask.hastaskzero}}<br>
-
-</P>
+<table style="width:100%">
+        <tr>
+<h2>Treść zadania: {{ activeTask.name}}<br></h2>
+<h3>{{ activeTask.taskdescription}}</h3>
+<br>
+<mat-chip-list>
+    <mat-chip selected="true" [color]="primary">{{ activeTask.difficulty }}</mat-chip>
+    <mat-chip selected="true" [color]="accent">{{ activeTask.category }}</mat-chip>
+</mat-chip-list>
+</tr>
+<br>
+<hr>
+<tr>
+        <img src="{{ activeTask.picture}}" height="350" width="350">
+        <h1>{{ activeTask.header}}</h1>
+        <p>{{ activeTask.descriptionP1}}</p>
+        <p>{{ activeTask.descriptionP2}}</p>
+        <p>{{ activeTask.descriptionP3}}</p>
+</tr>
+<br>
+<hr>
+<p>Kryteria akceptacji zadania</p>
 <ul>
-    <li *ngFor="let picture of activeTask.picture">
-            <img src="{{ picture.url}}" alt="{{ picture.title }}">
-    </li>
-</ul>
+        <li *ngFor="let acceptanceCriteria of activeTask.acceptanceCriteria">
+                {{ acceptanceCriteria.criterion }}
+                <!-- <label><input type="checkbox">{{ acceptanceCriteria.criterion }}</label> -->
+        </li>
+    </ul>
+<br>
 
-<ul>
-    <li *ngFor="let acceptanceCriteria of activeTask.acceptanceCriteria">
-            <label><input type="checkbox">{{ acceptanceCriteria.criterion }}</label>
-    </li>
-</ul>
+
+
+
+

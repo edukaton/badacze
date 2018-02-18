@@ -10,6 +10,8 @@ export class MainComponent implements OnInit {
 
   activeTask;
 
+
+  
   constructor(
     private _main: MainService) {
     

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { LoginComponent }      from './login/login.component';
 import { TaskdetailsComponent }      from './taskdetails/taskdetails.component';
 import { UserComponent }      from './user/user.component';
+import { MainComponent } from './base/main/main.component';
 
 import { AuthService } from './shared/auth.service'
 
@@ -20,7 +21,11 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserComponent
-  }
+  },
+    {
+    path: 'alltasks',
+    component: MainComponent
+  } 
 ];
 
 @NgModule({
