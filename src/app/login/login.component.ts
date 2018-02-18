@@ -16,6 +16,8 @@ export class LoginComponent implements OnInit {
   userType: string;
   loginInput: string;
 
+  logo: string = ""
+
   userTypes = [
     {
       name: "nauczyciel",
@@ -34,6 +36,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.logo = this._ms.logo
   }
 
   logInAs(admin) {

@@ -13,17 +13,21 @@
     </section>
 
     <section class="tasks">
-      <div class="task" (mouseenter)="log()" *ngFor="let t of tasks" class="task">
-        <div class="task-img">
-          <a [routerLink]="['/task', t.id]">
-            <img src="{{ t.picture }}" alt="">
-          </a>
+      <div class="task" *ngFor="let t of tasks">
+        <div class="mat-elevation-z4">
 
-        </div>
-        <div class="task-text">
-          <a [routerLink]="['/task', t.id]">
-            {{ t.name }}
-          </a>
+          <div class="task-img">
+            <a [routerLink]="['/task', t.id]">
+              <img src="{{ t.picture }}" alt="">
+            </a>
+
+          </div>
+          <div class="task-text">
+            <a [routerLink]="['/task', t.id]">
+              {{ t.name }}
+            </a>
+          </div>
+
         </div>
 
       </div>
