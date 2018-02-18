@@ -3,6 +3,8 @@ import { NgModel } from '@angular/forms';
 import { UserService } from '../user/user.service'
 import { MainService } from '../shared/main.service'
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -26,7 +28,9 @@ export class LoginComponent implements OnInit {
   ]
   constructor(
     private _userService: UserService,
-    private _ms: MainService
+    private _ms: MainService,
+    private _router: Router
+
   ) { }
 
   ngOnInit() {
@@ -35,6 +39,11 @@ export class LoginComponent implements OnInit {
   logInAs(admin) {
     this._userService.createUser(this._ms.users.length, this.userName, admin, true)
     this._userService.clearLastUser()
+    this.goTo('alltasks')
+  }
+
+  goTo(route:string) {
+    this._router.navigate([route]);
   }
 
 }

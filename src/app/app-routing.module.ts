@@ -6,6 +6,7 @@ import { TaskdetailsComponent }      from './taskdetails/taskdetails.component';
 import { UserComponent }      from './user/user.component';
 import { MainComponent } from './base/main/main.component';
 
+import { FokaGameComponent } from './foka-game/foka-game.component'
 import { AuthService } from './shared/auth.service'
 
 const routes: Routes = [
@@ -15,7 +16,12 @@ const routes: Routes = [
     canActivate: [AuthService]
   },
   {
-    path: 'task',
+    path: 'intro',
+    component: FokaGameComponent,
+    canActivate: [AuthService]
+  },
+  {
+    path: 'task/:id',
     component: TaskdetailsComponent
   },
   {
@@ -25,7 +31,7 @@ const routes: Routes = [
     {
     path: 'alltasks',
     component: MainComponent
-  } 
+  }
 ];
 
 @NgModule({

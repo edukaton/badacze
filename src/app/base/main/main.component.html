@@ -1,23 +1,46 @@
 <!-- <router-outlet></router-outlet> -->
-<tr>
-    <div class="login-body">
-        <mat-icon>search</mat-icon>
-        <mat-form-field class="">
-          <input matInput placeholder="Szukaj zadania" value="">
-        </mat-form-field>
-        <mat-icon>list</mat-icon>
-    </div>
 
-</tr>
+<div class="main">
+  <app-main-sidebar></app-main-sidebar>
+
+  <section class="filter-task-wrapper">
+    <section class="filter">
+      <mat-icon>search</mat-icon>
+      <mat-form-field class="">
+        <input matInput placeholder="Szukaj zadania" value="">
+      </mat-form-field>
+      <mat-icon>list</mat-icon>
+    </section>
+
+    <section class="tasks">
+      <div class="task" *ngFor="let t of tasks" class="task">
+        <div class="task-img">
+          <a [routerLink]="['/task', 1]"></a>
+          <img src="{{ t.picture }}" alt="">
+        </div>
+        <div class="task-text">
+          <a [routerLink]="['/task', t.id]">
+            {{ t.name }}
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+  </section>
+
+</div>
 
 
-<mat-grid-list cols="3" rowHeight="2:1">
+
+<!-- <mat-grid-list cols="3" rowHeight="2:1">
     <mat-grid-tile
     *ngFor="let task of tasks"
     [style.background]="lightblue"
     >{{ task.name }}</mat-grid-tile>
-    
-</mat-grid-list>
+
+</mat-grid-list> -->
+
+
 
 <!-- [style.background]="tile.color" -->
-

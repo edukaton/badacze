@@ -2,32 +2,29 @@
   <mat-toolbar-row>
     <a mat-raised-button color="primary" routerLink="login">Foka News</a>
     <a mat-raised-button color="primary" class="ml-auto" routerLink="alltasks">All Tasks</a>
-    <a mat-raised-button color="primary" class="ml-auto" routerLink="task">Task</a>
+    <a mat-raised-button color="primary" class="ml-auto" routerLink="intro">intro</a>
 
     <button mat-icon-button [matMenuTriggerFor]="menu">
       <mat-icon>face</mat-icon>
+      <span>isadmin?: {{ activeUser }}</span>
     </button>
 
     <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="confirmModal()">
+      <button mat-menu-item>
         <mat-icon>exit_to_app</mat-icon>
         <span>zrezygnuj</span>
       </button>
 
-      <button mat-menu-item>
+      <button (click)="changeUserToAdmin()" mat-menu-item>
         <mat-icon>exit_to_app</mat-icon>
         <span>Nauczyciel</span>
       </button>
 
-      <button mat-menu-item>
+      <button mat-menu-item (click)="changeToUser()">
         <mat-icon>exit_to_app</mat-icon>
         <span>Uczeń</span>
       </button>
-
     </mat-menu>
-    <!-- <a routerLink="user" mat-mini-fab color="accent">
 
-      <span>user</span>
-    </a> -->
   </mat-toolbar-row>
 </mat-toolbar>

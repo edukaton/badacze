@@ -26,7 +26,10 @@ import { ModalService } from './shared/modal.service'
 // modules
 import { AngularMaterialModule } from './angular-material.module';
 import { TaskdetailsComponent } from './taskdetails/taskdetails.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { FokaGameComponent } from './foka-game/foka-game.component';
+import { FokaGameSidebarComponent } from './foka-game/foka-game-sidebar/foka-game-sidebar.component';
+import { MainSidebarComponent } from './base/main/main-sidebar/main-sidebar.component'
 
 
 @NgModule({
@@ -42,7 +45,10 @@ import { AppRoutingModule } from './app-routing.module'
     UploadtasksolutionComponent,
     DisplaytasksolutionComponent,
     InitialstudentratingComponent,
-    FinalstudentratingComponent
+    FinalstudentratingComponent,
+    FokaGameComponent,
+    FokaGameSidebarComponent,
+    MainSidebarComponent
   ],
   imports: [
     BrowserModule,

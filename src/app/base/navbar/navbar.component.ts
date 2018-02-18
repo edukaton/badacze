@@ -10,18 +10,46 @@ import { UserService } from '../../user/user.service'
 })
 export class NavbarComponent implements OnInit {
 
+  isAdmin;
+  subscribeUser
+
   constructor(
     private _userService: UserService,
     private _modalService: ModalService,
     private _ms: MainService
-  ) { }
 
-  ngOnInit() {
+  ) {
+    this.subscribeUser = this._ms.getAdmin().subscribe(d => { this.isAdmin = d; });
   }
 
-  // openConfirmModal() {
-  //   this._modalService.openModal
-  // }
+  user:any[]
+
+
+  ngOnInit() {
+    console.log(this.isAdmin)
+    // if(this._ms.admin){
+    //   this.activeUser = "teacher"
+    // } else {
+    //   this.activeUser = "student"
+    // }
+
+  }
+
+  openConfirmModal() {
+    // this._modalService.openModal
+
+    // this._ms.users.active
+  }
+
+  changeUserToAdmin() {
+    // this._ms.admin = true
+    console.log("toadmin")
+  }
+
+  changeToUser() {
+    // this._ms.admin = false
+  }
+
 
   // closeConfirmModal() {
   //   this._modalService.closeModal

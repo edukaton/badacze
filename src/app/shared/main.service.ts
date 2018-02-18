@@ -4,11 +4,17 @@ import {
   Response
 } from '@angular/http'
 import 'rxjs/Rx';
-
-
+import { Observable } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class MainService {
+
+  admin = new Subject<boolean>();
+  // admin: boolean;
+  getAdmin(): Observable<boolean> {
+    return this.admin.asObservable();
+  }
 
   data: any;
 
@@ -30,7 +36,8 @@ export class MainService {
                 name:"Dariusz",
                 role:"Student"}];
 
-  task: any = [{id:"1",
+  task: any = [{
+                id: 1,
                 name: "Zoo w Chorzowie",
                 picture: "http://via.placeholder.com/350x150",
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
@@ -48,8 +55,8 @@ export class MainService {
                   {criterion: "Lorem ipsum dolor sit amet"},
                   {criterion: "In mattis nisl quis ornare viverra."},
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
-                
-                  {id:"2",
+
+                  {id:2,
                 name: "Zupa Grzybowa",
                 picture: "http://via.placeholder.com/350x150",
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
@@ -68,7 +75,7 @@ export class MainService {
                   {criterion: "In mattis nisl quis ornare viverra."},
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
 
-                  {id:"3",
+                  {id: 3,
                 name: "Morderczy kefir z Krasnystawu",
                 picture: "http://via.placeholder.com/350x150",
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
@@ -87,7 +94,7 @@ export class MainService {
                   {criterion: "In mattis nisl quis ornare viverra."},
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
 
-                {id:"4",
+                {id: 4,
                 name: "Samochód w kosmosie",
                 picture: "http://via.placeholder.com/140x100",
                 video: "https://www.youtube.com/watch?v=jWkMhCLkVOg",

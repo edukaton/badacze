@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MainService } from '../shared/main.service';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-taskdetails',
@@ -8,13 +10,20 @@ import { MainService } from '../shared/main.service';
 })
 export class TaskdetailsComponent implements OnInit {
 
+  id;
+
   activeTask;
+  tasks;
+
+  sub;
 
   constructor(
-    private _main: MainService) {
-    
+    private _main: MainService,
+    private _route: ActivatedRoute
+  ) {
+
   }
-  
+
   availableColors = [
     { name: 'none', color: '' },
     { name: 'Primary', color: 'primary' },
@@ -23,9 +32,15 @@ export class TaskdetailsComponent implements OnInit {
   ];
 
   ngOnInit() {
-    this.tasks = this._main.task
-    this.activeTask = this.tasks[0];
-    
+    this.sub = this._route.params.subscribe(params => {
+      this.id = +params['id'];
+    });
+
+    this.activeTask = this._main.task.find(o => o.id == this.id);
   }
-  tasks;
+
+  private ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
 }

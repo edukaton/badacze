@@ -15,7 +15,6 @@ export class AuthService implements CanActivate {
 
   canActivate() {
     let bool: boolean
-    console.log(this.users)
     if(this.users.length > 0) {
       this.users.forEach(v => {
         if(v.admin) {

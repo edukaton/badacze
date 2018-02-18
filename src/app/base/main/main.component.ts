@@ -9,20 +9,16 @@ import { MainService } from '../../shared/main.service';
 export class MainComponent implements OnInit {
 
   activeTask;
+  tasks;
+  pictures;
 
-
-  
   constructor(
-    private _main: MainService) {
-    
-  }
+    private _main: MainService
+  ) {}
 
   ngOnInit() {
     this.tasks = this._main.task
     this.activeTask = this.tasks[0];
-
   }
-  tasks;
-  pictures;
-}
 
+}

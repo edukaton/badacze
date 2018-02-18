@@ -42,4 +42,12 @@ export class UserService {
     console.log('user deleted')
   }
 
+  toAdmin() {
+    // this._ms.admin = true
+  }
+
+  toUser() {
+    // this._ms.admin = false
+  }
+
 }
