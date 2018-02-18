@@ -1,30 +1,29 @@
 <section>
 
   <div class="container">
-    <div class="row">
-      <div class="col">
+    <div class="row justify-content-center">
+      <div class="col-8">
         <mat-tab-group>
             <mat-tab label="News">
-                <h2>Przeczytaj artykuł i oceń<br></h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.</h3>
-                  <img src="{{ activeTask.picture}}" height="350" width="350">
-                  <h1>{{ activeTask.header}}</h1>
-                  <p>{{ activeTask.descriptionP1}}</p>
-                  <p>{{ activeTask.descriptionP2}}</p>
-                  <p>{{ activeTask.descriptionP3}}</p>
-
-
-                  <td><img src='././assets/img/kaczka1.png' height="42" width="42">
-                  <td><mat-slider min="1" max="7" step="1"></mat-slider>
-                  <td><img src='././assets/img/fokaprzezr2.png' height="42" width="42">
-
-
-                <a mat-raised-button class="login-btn"
+              <h2>Przeczytaj artykuł i oceń</h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.
+              </h3>
+              <img src="{{ activeTask.picture}}" height="350" width="350">
+              <h1>{{ activeTask.header}}</h1>
+              <p>{{ activeTask.descriptionP1}}</p>
+              <p>{{ activeTask.descriptionP2}}</p>
+              <p>{{ activeTask.descriptionP3}}</p>
+              <img src='././assets/img/kaczka1.png' height="42" width="42">
+              <mat-slider min="1" max="7" step="1"></mat-slider>
+              <img src='././assets/img/fokaprzezr2.png' height="42" width="42">
+              <a
+                mat-raised-button class="login-btn"
                 routerLink="."
                 [disabled]="!nameIsValid"
                 (click)="logInAs(userType)">
                 Dalej
-               </a>
+              </a>
             </mat-tab>
 
             <mat-tab label="Argumentacja">
@@ -101,37 +100,32 @@
             </mat-tab>
 
     <mat-tab label="Weryfikacja">
-      <table style="width:100%">
-        <tr>
-          <h2>Przeczytaj artykuł i oceń</h2>
-          <br>
-          <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.
-          </h3>
-        <hr>
-        </tr>
-        <tr>
-          <img src="{{ activeTask.picture}}" height="350" width="350">
-          <h1>{{ activeTask.header}}</h1>
-          <p>{{ activeTask.descriptionP1}}</p>
-          <p>{{ activeTask.descriptionP2}}</p>
-          <p>{{ activeTask.descriptionP3}}</p>
-        </tr>
-        <tr>
-          <td><img src='././assets/img/kaczka1.png' height="42" width="42"></td>
-          <td><mat-slider min="1" max="7" step="1"></mat-slider></td>
-          <td><img src='././assets/img/fokaprzezr2.png' height="42" width="42"></td>
-        </tr>
-        <tr>
-          <a mat-raised-button class="login-btn"
-             routerLink="."
-             [disabled]="!nameIsValid"
-             (click)="logInAs(userType)">
-             Dalej
-         </a>
-        </tr>
-              </table>
-            </mat-tab>
+
+      <h2>Przeczytaj artykuł i oceń</h2>
+
+      <h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget turpis eget eros ornare porttitor porttitor sit amet turpis. Nulla viverra magna nec laoreet ultricies. Nunc mattis scelerisque justo ac iaculis. Aliquam ac ligula sapien.
+      </h3>
+
+      <img src="{{ activeTask.picture}}" height="350" width="350">
+      <h1>{{ activeTask.header}}</h1>
+      <p>{{ activeTask.descriptionP1}}</p>
+      <p>{{ activeTask.descriptionP2}}</p>
+      <p>{{ activeTask.descriptionP3}}</p>
+
+      <img src='././assets/img/kaczka1.png' height="42" width="42">
+      <mat-slider min="1" max="7" step="1"></mat-slider>
+      <img src='././assets/img/fokaprzezr2.png' height="42" width="42">
+
+      <a mat-raised-button class="login-btn"
+         routerLink="."
+         [disabled]="!nameIsValid"
+         (click)="logInAs(userType)">
+         Dalej
+      </a>
+
+
+    </mat-tab>
 
           </mat-tab-group>
       </div>
