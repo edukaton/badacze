@@ -24,15 +24,15 @@ export class MainService {
 
   users: any[] = [];
 
-  user: any = [{id:"1",
+  user: any = [{id: 1,
                 name:"Tomasz",
                 role:"Teacher"},
 
-                {id:"2",
+                {id: 2,
                 name:"Mariusz",
                 role:"Student"},
 
-                {id:"3",
+                {id: 3,
                 name:"Dariusz",
                 role:"Student"}];
 
@@ -56,7 +56,7 @@ export class MainService {
                   {criterion: "In mattis nisl quis ornare viverra."},
                   {criterion: "Cras sed libero volutpat, elementum lacus"}]},
 
-                  {id:2,
+                  {id: 2,
                 name: "Zupa Grzybowa",
                 picture: "http://via.placeholder.com/350x150",
                 video: "https://www.youtube.com/watch?v=B9FzVhw8_bY",
@@ -114,76 +114,69 @@ export class MainService {
                     {criterion: "c justo accumsan a"}]
   }];
 
-  taskStudentInitialRating: any = [{id:"1",
-                                taskId:"1",
-                                userId:"2",
-                                rating:"4"}, //rating is in 1-7 scale
+  taskStudentInitialRating: any = [{id: 1,
+                                taskId: 1,
+                                userId: 2,
+                                rating: 4}, //rating is in 1-7 scale
 
-                                {id:"2",
-                                taskId:"1",
-                                userId:"3",
-                                rating:"5"}, //rating is in 1-7 scale
-                                {id:"3",
-                                taskId:"2",
-                                userId:"2",
-                                rating:"1"}, //rating is in 1-7 scale
+                                {id: 2,
+                                taskId: 1,
+                                userId: 3,
+                                rating: 5}, //rating is in 1-7 scale
+                                {id: 3,
+                                taskId: 2,
+                                userId: 2,
+                                rating: 1}, //rating is in 1-7 scale
 
-                                {id:"4",
-                                taskId:"2",
-                                userId:"3",
-                                rating:"7"}]; //rating is in 1-7 scale
+                                {id: 4,
+                                taskId: 2,
+                                userId: 3,
+                                rating: 7}]; //rating is in 1-7 scale
 
 //student can add many solutions to single task
-  taskStudentSolution: any = [{id:"1",
-                            taskId:"1",
-                            userId:"2",
+  taskStudentSolution: any = [{id: 1,
+                            taskId: 1,
+                            userId: 2,
                             description:"Curabitur maximus nisl ac justo accumsan auctor eu vitae enim.",
-                            video: "https://www.youtube.com/watch?v=-UE7tXDKIus",
-                            picture: "http://via.placeholder.com/350x150",
-                            source:"www.eurekalert.org",
-                            sourceAuthor:"Cori Bargmann, Rockefeller University",
-                            sourceYear: "2017",
-                            sourcetype: "Online"}, //can be online, paper etc
-
-                            {id:"2",
-                            taskId:"1",
-                            userId:"3",
-                            description:"Curabitur maximus ni.",
-                            picture: "http://via.placeholder.com/350x65",
                             source:"https://scholar.google.pl/",
-                            sourceAuthor:"Marian Józef, Kraków AGH University",
-                            sourceYear: "1983",
-                            sourcetype: "Paper"}, //can be online, paper etc
+                            sourcePower: 6,
+                            solutionType: "potwierdza"}, //can be online, paper etc
 
-                            {id:"3",
-                            taskId:"2",
-                            userId:"3",
+                            {id: 2,
+                            taskId: 1,
+                            userId: 3,
                             description:"Curabitur maximus ni.",
-                            video: "https://www.youtube.com/watch?v=O52jAYa4Pm8",
-                            source:"youtube",
-                            sourceAuthor:"prof Krzysztof Krzysztof",
-                            sourceYear: "1998",
-                            sourcetype: "Online"}]; //can be online, paper etc
+                            source:"https://scholar.google.pl/",
+                            sourcePower: 6,
+                            solutionType: "potwierdza"}, //can be online, paper etc
 
-  taskStudentFinalRating: any = [{id:"1",
-                                taskId:"1",
-                                userId:"2",
-                                rating:"7"}, //rating is in 1-7 scale
+                            {id: 3,
+                            taskId: 2,
+                            userId: 3,
+                            description:"Curabitur maximus ni.",
+                            source:"https://scholar.google.pl/",
+                            sourcePower: 3,
+                            solutionType: "zaprzecza"}]; //can be online, paper etc
 
-                                {id:"1",
-                                taskId:"1",
-                                userId:"3",
-                                rating:"5"}, //rating is in 1-7 scale
+  taskStudentFinalRating: any = [{id: 1,
+                                taskId: 1,
+                                userId: 2,
+                                rating: 7}, //rating is in 1-7 scale
 
-                                {id:"2",
-                                taskId:"2",
-                                userId:"2",
-                                rating:"6"}, //rating is in 1-7 scale
+                                {id: 1,
+                                taskId: 1,
+                                userId: 3,
+                                rating: 5}, //rating is in 1-7 scale
 
-                                {id:"2",
-                                taskId:"2",
-                                userId:"3",
-                                rating:"1"}]; //rating is in 1-7 scale
+                                {id: 2,
+                                taskId: 2,
+                                userId: 2,
+                                rating: 6}, //rating is in 1-7 scale
+
+                                {id: 2,
+                                taskId: 2,
+                                userId: 3,
+                                rating: 1}]; //rating is in 1-7 scale
 
   constructor(private http:Http) {
     this.results = []
