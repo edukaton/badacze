@@ -10,8 +10,8 @@ import { AuthService } from './shared/auth.service'
 const routes: Routes = [
   {
     path: 'login',
-    component: LoginComponent
-    // canActivate: [AuthService]
+    component: LoginComponent,
+    canActivate: [AuthService]
   },
   {
     path: 'task',
