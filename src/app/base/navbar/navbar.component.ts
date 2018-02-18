@@ -17,9 +17,9 @@ export class NavbarComponent implements OnInit {
     private _userService: UserService,
     private _modalService: ModalService,
     private _ms: MainService
-
   ) {
-    this.subscribeUser = this._ms.getAdmin().subscribe(d => { this.isAdmin = d; });
+    this.isAdmin = _ms.admin
+    console.log(this.isAdmin)
   }
 
   user:any[]

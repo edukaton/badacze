@@ -5,18 +5,20 @@
 
   <section class="filter-task-wrapper">
     <section class="filter">
-      <mat-icon>search</mat-icon>
       <mat-form-field class="">
         <input matInput placeholder="Szukaj zadania" value="">
       </mat-form-field>
-      <mat-icon>list</mat-icon>
+      <mat-icon>search</mat-icon>
+      <!-- <mat-icon>list</mat-icon> -->
     </section>
 
     <section class="tasks">
-      <div class="task" *ngFor="let t of tasks" class="task">
+      <div class="task" (mouseenter)="log()" *ngFor="let t of tasks" class="task">
         <div class="task-img">
-          <a [routerLink]="['/task', 1]"></a>
-          <img src="{{ t.picture }}" alt="">
+          <a [routerLink]="['/task', t.id]">
+            <img src="{{ t.picture }}" alt="">
+          </a>
+
         </div>
         <div class="task-text">
           <a [routerLink]="['/task', t.id]">

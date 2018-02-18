@@ -21,4 +21,8 @@ export class MainComponent implements OnInit {
     this.activeTask = this.tasks[0];
   }
 
+  log() {
+    console.log(1)
+  }
+
 }

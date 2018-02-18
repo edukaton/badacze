@@ -39,11 +39,25 @@ export class LoginComponent implements OnInit {
   logInAs(admin) {
     this._userService.createUser(this._ms.users.length, this.userName, admin, true)
     this._userService.clearLastUser()
-    this.goTo('alltasks')
+    if(admin) {
+      this.goTo('alltasks')
+    } else {
+      this.goTo('intro')
+    }
+
   }
 
   goTo(route:string) {
     this._router.navigate([route]);
+  }
+
+  adminLogIn(admin) {
+    if(admin) {
+      this._ms.admin = admin
+    } else {
+      this._ms.admin = !admin
+    }
+
   }
 
 }

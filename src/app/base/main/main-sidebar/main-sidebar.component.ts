@@ -9,8 +9,26 @@ export class MainSidebarComponent implements OnInit {
 
   navigation = [
     {
-      name: 'name'
-    }
+      name: 'Moje scenariusze',
+      value: ""
+    },
+    {
+      name: 'Moje klasy',
+      value: ""
+    },
+    {
+      name: 'Moje scenariusze',
+      value: ""
+    },
+    {
+      name: 'Opcje',
+      value: ""
+    },
+    {
+      name: 'Poradnik',
+      value: ""
+    },
+
   ]
 
   constructor() { }

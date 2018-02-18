@@ -6,6 +6,7 @@ import { TaskdetailsComponent }      from './taskdetails/taskdetails.component';
 import { InitialstudentratingComponent }      from './initialstudentrating/initialstudentrating.component';
 import { UserComponent }      from './user/user.component';
 import { MainComponent } from './base/main/main.component';
+import { BaseComponent } from './base/base.component'
 import {DisplaytasksolutionComponent} from './displaytasksolution/displaytasksolution.component';
 
 import { FokaGameComponent } from './foka-game/foka-game.component'
@@ -13,7 +14,7 @@ import { AuthService } from './shared/auth.service'
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: '',
     component: LoginComponent,
     canActivate: [AuthService]
   },
@@ -32,7 +33,7 @@ const routes: Routes = [
   },
     {
     path: 'alltasks',
-    component: MainComponent
+    component: BaseComponent
   },
   {
     path: 'taskinitialrating',

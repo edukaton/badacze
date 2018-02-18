@@ -6,21 +6,18 @@ import {
 import 'rxjs/Rx';
 import { Observable } from 'rxjs';
 import { Subject } from 'rxjs/Subject';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class MainService {
 
-  admin = new Subject<boolean>();
-  // admin: boolean;
-  getAdmin(): Observable<boolean> {
-    return this.admin.asObservable();
-  }
+  admin: boolean
 
   data: any;
 
-  apiRoot: string = '/api';
-  results: Object[];
-  loading: boolean;
+  // apiRoot: string = '/api';``
+  // results: Object[];
+  // loading: boolean;
 
   users: any[] = [];
 
@@ -179,25 +176,25 @@ export class MainService {
                                 rating: 1}]; //rating is in 1-7 scale
 
   constructor(private http:Http) {
-    this.results = []
-    this.loading = false;
+    // this.results = []
+    // this.loading = false;
   }
 
-  mainData(term: string) {
-    let apiUrl = `${this.apiRoot}`;
-      this.http.get(apiUrl)
-        .map(res => res.json())
-        .subscribe(
-          data => {
-            this.data = data
-            console.log(this.data)
-          }
-        )
-  }
+  // mainData(term: string) {
+  //   let apiUrl = `${this.apiRoot}`;
+  //     this.http.get(apiUrl)
+  //       .map(res => res.json())
+  //       .subscribe(
+  //         data => {
+  //           this.data = data
+  //           console.log(this.data)
+  //         }
+  //       )
+  // }
 
-  log() {
-    console.log("main service is on");
-  }
+  // log() {
+  //   console.log("main service is on");
+  // }
 
 
 
